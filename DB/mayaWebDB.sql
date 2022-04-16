@@ -88,7 +88,7 @@ DROP TABLE IF EXISTS `mayaweb`.`Elemento_calendario` ;
 
 CREATE TABLE IF NOT EXISTS `mayaweb`.`Elemento_calendario` (
   `nombre_elemento_calendario` VARCHAR(150) NOT NULL,
-  `informacion` VARCHAR(1000) NULL,
+  `informacion` VARCHAR(1500) NULL,
   `nombre_calendario_rueda` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`nombre_elemento_calendario`),
   INDEX `fk_Elemento_calendario_Calendario_rueda1_idx` (`nombre_calendario_rueda` ASC),
@@ -107,7 +107,7 @@ DROP TABLE IF EXISTS `mayaweb`.`Elemento_Nahual` ;
 
 CREATE TABLE IF NOT EXISTS `mayaweb`.`Elemento_Nahual` (
   `nombre_elemento_nahual` VARCHAR(100) NOT NULL,
-  `significado` VARCHAR(1000) NULL,
+  `significado` VARCHAR(2000) NULL,
   `simbolo` VARCHAR(100) NULL,
   `nombre_elemento_calendario` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`nombre_elemento_nahual`),
