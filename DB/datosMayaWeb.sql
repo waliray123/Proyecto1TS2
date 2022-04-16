@@ -58,6 +58,15 @@ Dentro de la cultura maya se dice que cada uno está relacionado con un animal q
 'Cholquij'
 );
 
+INSERT INTO Elemento_calendario (nombre_elemento_calendario,informacion,nombre_calendario_rueda)
+VALUES ('Energia', 
+'El calendario Cholq\'ij utiliza las energías del 1 al 13 pero su ciclo es de meses y días.
+La relación del 13 con los ciclos de la vida es múltiple, entre ellas se pueden mencionar:
+Las 13 energías en el nacimiento
+Los 13 ciclos de 20 días de un año Cholq\'ij.
+El 13 es una cantidad importante en el pensamiento maya. Se utiliza para indicar el nivel de energía y al combinar con el significado de los nawales construye la personalidad. Este número tiene influencia en toda la vida, marca la niñez, juventud, madurez y ancianidad.',
+'Cholquij'
+);
 
 
 /*---ELEMENTOS DE LOS ELEMENTOS DE CALENDARIOS---*/
@@ -1117,3 +1126,18 @@ VALUES
 ,('Algunas veces se enoja y se impacienta.','I\'x')
 ,('Su carácter le puede hacer prepotente, orgulloso, colérico, serio y vengativo.','I\'x')
 ;
+
+
+/*---Energias---*/
+
+INSERT INTO Elemento_Nahual (nombre_elemento_nahual,significado,simbolo,nombre_elemento_calendario)
+VALUES ('Jun'
+,'Principio de Unidad.
+Propósito, Atraer, Unificar.
+El principio y origen, el ser humano como un todo.
+La unidad establece el propósito, el objeto y la meta de acción por pequeña que esta sea.
+La unidad es el todo, la única verdad absoluta, es la creación mental del todo.
+En el circulo de la perfección todos los seres están unidos inseparablemente sin importar su dimensión de manifestación, la creencia de que no es así, crea una grieta en la relación original y esa grieta en el campo de energía crea una polaridad (como proceso de cicatrización) que ha de convertirse en vibración.'
+,'El Todo, La Unidad, El Absoluto, La Pureza'
+,'Energia'
+);
