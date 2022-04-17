@@ -1,13 +1,33 @@
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = 3000;
+const express = require('express');
+const app = express();
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
-});
+app.use(express.urlencoded({extended:false}));
+app.use(express.json);
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+
+const dotenv = require('dotenv');
+dotenv.config({path:'./env/.env'});
+
+app.use('/resources',express.static('public'));
+app.use('/resources',express.static(__dirname+'/public'));
+
+app.set('view engine','ejs');
+
+const bcryptjs = require('bcryptjs');
+
+const session = require('express-session');
+app.use(session({
+  secret:'laclavesecretaespepe',
+  resave: 'true',
+  saveUninitialized: 'true'
+}));
+
+const connection = require('./utils/db');
+
+app.get('/',(req,res)=>{
+  res.render('HOLA');
+})
+
+app.listen(3000,(req,res)=>{
+  console.log('SERVER RUNNING IN http://localhost:3000');
+})
