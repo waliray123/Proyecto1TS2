@@ -34,10 +34,10 @@ app.get('/register',(req, res)=>{
 app.post('/register', async (req, res)=>{
 	const user = req.body.user;
 	const name = req.body.name;
-    const rol = req.body.rol;
+    const lastname = req.body.lastname;
 	const pass = req.body.pass;
 	let passwordHash = await bcryptjs.hash(pass, 8);
-    connection.query('INSERT INTO Usuario SET ?',{nombre_usuario:user, nombre:name, apellido:rol, password:passwordHash}, async (error, results)=>{
+    connection.query('INSERT INTO Usuario SET ?',{nombre_usuario:user, nombre:name, apellido:lastname, password:passwordHash}, async (error, results)=>{
         if(error){
             console.log(error);
         }else{            
@@ -77,7 +77,7 @@ app.post('/auth', async (req, res)=> {
 			} else {         
 				//creamos una var de session y le asignamos true si INICIO SESSION       
 				req.session.loggedin = true;                
-				req.session.nombre_usuario = results[0].name;
+				req.session.name = results[0].nombre_usuario;
 				res.render('login', {
 					alert: true,
 					alertTitle: "Conexión exitosa",
