@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendario Haab</title>
+</head>
+
+<body class="text-center">
+    <h1>Calendario Haab</h1>
+    <h2>Informacion</h2>        
+    <div id='informacion'></div>
+
+    <script type='text/javascript'>
+        var datos =<%-JSON.stringify(informacion)%>;
+        var inf = datos[0].informacion;
+        document.getElementById('informacion').innerText += inf;
+    </script>
+</body>
+
+</html>
