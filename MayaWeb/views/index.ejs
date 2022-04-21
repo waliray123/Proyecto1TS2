@@ -1,25 +1,133 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <title>Welcome</title>
-    <style>      
-    
-    </style>
-  </head>
-  <body class="text-center">         
-          <div class="contenedor">
-            <h1>Página de Inicio</h1>
-            <% if (login) { %>                
-                <h1>Usuario conectado: <strong><%= name %></strong></h1>                        
-                <a href="logout" class="a-logout">Logout</a>
-            <%} else { %>
-                <h1><strong><%= name %></strong></h1>   
-                <a href="login" class="a-login">Ir a Login</a>
-            <% } %>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="resources/stylesheets/estiloPrincipal.css">
+  <title>MAYAWEB</title>  
+</head>
+
+<body class="text-center">  
+  <%- include('encabezado') %>
+  <div class="cont s--inactive">
+    <!-- cont inner start -->
+    <div class="cont__inner">
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Calendario Haab</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Calendario Haab</div>
+              <div class="el__close-btn">Informacion del calendario</div>
+            </div>
           </div>
-  </body>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">1</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="1">1</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Calendario Cholquij</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Calendario Cholquij</div>
+              <div class="el__close-btn">Informacion del calendario</div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">2</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="2">2</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Rueda Calendarica</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Rueda Calendarica</div>
+              <div class="el__close-btn">Info Rueda Calendarica</div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">3</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="3">3</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Matematica Maya</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Matematica Maya</div>
+              <div class="el__close-btn">info Matematica Maya</div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">4</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="4">4</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Calculadora Calendarica</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Calculadora Calendarica</div>
+              <div class="el__close-btn">info Calculadora Calendarica</div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">5</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="5">5</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+    </div>
+    <!-- cont inner end -->
+  </div>
+  <script src="/resources/js/scriptPrincipal.js"></script>
+</body>
+
 </html>
