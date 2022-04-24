@@ -1267,3 +1267,12 @@ El movimiento es la energía que fluye desde la fuente y regresa a ella. Este pr
 ,'La Magia, EL Poder del Camino, La Teurgia, El Trasmutar'
 ,'Energia'
 );
+
+/*---Juegos---*/
+
+INSERT INTO juego (nombre_juego,descripcion,reglas)
+VALUES ( 'matematica maya',
+'El juego consiste en que se dan dos numeros mayas del 0 al 9 y el jugador tiene que sumarlos y dar la respuesta en nuemros en formarto decimal',
+'por cada suma hecha se da 1 punto, si falla, el juego termina y se reinicia la puntuacion'
+);
+

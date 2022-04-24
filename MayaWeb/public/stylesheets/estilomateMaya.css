@@ -1,0 +1,141 @@
+body {
+    background: #1f1f1f;
+    font-family: "Roboto", sans-serif;    
+    color: #fff;
+}
+
+.cont {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 80px 70px;
+}
+
+nav ul>li:nth-of-type(5) {
+    background-color: #222
+}
+
+nav ul>li:first-of-type {
+    background-color: #333d29;
+}
+
+.game-inicio , #game{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: auto auto;
+    background: #252525;
+    height: 100%;
+    width: 100%;
+}
+
+.simbolos{
+    /* background: rgb(59, 95, 51); */
+    align-items: center;
+    text-align: center;
+}
+
+.simbolos .simbolo{
+    padding: 2.5em;
+}
+
+.general-simbolo{
+    /* background: rgb(67, 139, 53); */
+    align-items: center;
+    text-align: center;
+}
+
+.btn-init{
+    grid-column: 1 / 3;
+    align-items: center;
+    text-align: center;
+    /* background:rgb(31, 69, 22); */
+    /* padding: 10px; */
+}
+
+.btn-init > button{
+    /* padding: 1em; */
+    font-size: 1.6em;
+    border-radius: 5px;    
+    transition-duration: 0.7s;
+    color: rgb(255, 255, 255);
+    background-color: #333d29;
+    width: 220px;
+    height: 60px;
+}
+
+.btn-init > button:hover {
+    cursor: pointer;
+    transform: translateX(5px) translateY(-7px);
+  }
+
+/*Para la suma maya*/
+
+#game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game{
+    display: none;
+}
+
+#game h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 2px white;
+    animation: zooms 1s linear infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes zooms {
+    from { transform: translate(-20px);}
+    to { transform: translate(20px);}
+}
+
+.centerdiv{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #324353;
+}
+
+.insertbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+
+/* #number1, #number2 {
+    text-align: center;
+    padding : 20px 30px;
+    width: 3em;
+    font-size: 30px;
+    box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999;
+} */
+
+.box1 p{
+    font-size: 4em;
+    margin: 0 0.6em -0.1em;
+    color: #bebebe;
+}
+
+.middlebox #answ{
+    margin: 30px 0;
+    padding: 5px 0;
+    font-size: 1.9em;
+    text-align: center;
+    width: 6.5em;
+}
+

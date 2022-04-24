@@ -131,6 +131,7 @@ body {
     opacity: 1;
     pointer-events: auto;
     transition: all 0.5s 1.4s;
+    overflow: scroll;
 }
 .el__text {
     /*text-transform: uppercase;*/
