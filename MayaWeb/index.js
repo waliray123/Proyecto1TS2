@@ -45,6 +45,30 @@ app.get('/calendarioHaab', (req, res) => {
     });	
 });
 
+app.get('/ruedaCalendarica', (req, res) => {
+	let queryCons = 'SELECT * FROM Calendario_rueda WHERE nombre_calendario_rueda = \'Rueda Calendarica\'';
+	connection.query(queryCons, function(err, result) {
+        if(err){
+            throw err;
+        } else {
+			obj = JSON.stringify(result);
+            res.render('ruedaCalendarica', {'informacion' : result});                
+        }
+    });	
+});
+
+app.get('/calculadora', (req, res) => {
+	let queryCons = 'SELECT * FROM Calendario_rueda WHERE nombre_calendario_rueda = \'Rueda Calendarica\'';
+	connection.query(queryCons, function(err, result) {
+        if(err){
+            throw err;
+        } else {
+			obj = JSON.stringify(result);
+            res.render('calculadora', {'informacion' : result});                
+        }
+    });	
+});
+
 app.post('/register', async (req, res) => {
 	const user = req.body.user;
 	const name = req.body.name;

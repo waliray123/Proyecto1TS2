@@ -1,0 +1,50 @@
+
+<script type="text/javascript" src="https://maya.nmai.si.edu/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://maya.nmai.si.edu/misc/drupal.js?ra8akd"></script>
+<script type="text/javascript" src="https://maya.nmai.si.edu/sites/all/themes/mayatime/js/jquery.qtip.min.js?ra8akd"></script>
+<script src="/resources/js/scriptCalculadora.js"></script>
+
+<link type="text/css" rel="stylesheet" href="/resources/stylesheets/estiloCalculadora.css" media="all" />
+<div class="centrar">
+    <div id="calculadora-container">
+        <div id='calendar-converter-main'>		
+            <div id='converter-wrap'>
+                <div id='conveter-main'>
+                    <div id='monument'>                
+                        <div id='baktuns' rel='0' class='calendar-glyph even'><div class='numeral'></div></div>
+                        <div id='katuns' rel='1' class='calendar-glyph odd'><div class='numeral'></div></div>
+                        <div id='tuns' rel='2' class='calendar-glyph even'><div class='numeral'></div></div>
+                        <div id='uinals' rel='3' class='calendar-glyph odd'><div class='numeral'></div></div>
+                        <div id='kins' rel='4' class='calendar-glyph even'><div class='numeral'></div></div>
+                        <div id='tzolkin' rel='5' class='calendar-glyph odd'><div class='numeral'></div></div>
+                        <div id='haab' rel='6' class='calendar-glyph even'><div class='numeral'></div></div>
+                        <div id='night' rel='7' class='calendar-glyph odd'></div>
+                    </div>
+                </div>
+                <div id='converter-aside'>
+                    <div id='select-date'>
+                        <div>
+                            <h3 class="letterC">Fecha </h3>
+                            <input type="date" id="date-calc" name="date-calc" class="letterC2">
+                        </div>
+                        <div>
+                            <button id='convert'>Calcular</button>
+                        </div>
+                    </div><!--select-date-->
+                    <div id='details'>
+                        <div>
+                            <h3 class="letterC">Fecha de Cuenta Larga</h3><h3><span id='lcd' class="letterC"></span></h3>
+                        </div>                    
+                        <div>
+                            <p class="letterC"><strong>Fecha del Tzolk'in:</strong>&nbsp;<span id='tzolkin-date'></span>&nbsp;<span id='tzolkin-month'></span></p>
+                            <p class="letterC"><strong>Fecha del Haab:</strong>&nbsp;<span id='haab-date'></span>&nbsp;<span id='haab-month'></span></p>
+                            <p class="letterC"><strong>Señor de la Noche:</strong>&nbsp;G<span id='night-date'></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class='clear'></div>
+            </div>
+        </div>    
+    </div>
+</div>
+
