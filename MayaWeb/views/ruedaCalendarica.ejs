@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/stylesheets/estiloRueda.css">
+    <title>Calendario Haab</title>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js '></script>
+    <script src="/resources/js/scriptRueda.js"></script>
+</head>
+
+<body class="text-center">
+    <%-include('encabezado')%>
+
+    <div class="fullscreen nopadding">
+        <div class="header">
+            <h1>RUEDA CALENDARICA</h1>
+        </div>
+    </div>
+
+    <div class="white nopadding more">
+        <a id="more">&#x25BC; More &#x25BC;</a>
+    </div>
+
+    <div class="white">
+        <a id="test"></a>
+        <h1>Informacion</h1>
+        <img class="floatleft redondo" src="/resources/images/imgRueda/rueda1.jpg" />
+        <div>            
+            El Calendario Maya se divide en un amplio sistema calendárico compuesto de un conjunto de distintos ciclos que se encuentran entrelazados entre sí. Cada uno tiene con sus propios propósitos rituales, astronómicos, agrícolas o de otro orden.
+            Los antiguos mayas tenían una fascinación por los ciclos de tiempo y eran observadores consumados del cielo, usando su conocimiento de astronomía y matemáticas, lograron desarrollar uno de los sistemas de calendario más precisos de la historia humana.
+            Los calendarios cíclicos mayas más comúnmente conocidos son Haab y Tzolkin. Además de estos, los mayas también desarrollaron el calendario de Cuenta Larga para fechar cronológicamente eventos míticos e históricos.
+
+        </div>
+    </div>
+
+    <div class="semitrans">
+        <h1>Et Cetera...</h1>
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas
+            convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis
+            velit, id fringilla sem nunc vel mi.</p>
+        <h2>Sub est.</h2>
+        <p>Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi
+            metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor
+            diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare.
+        </p>
+        <h2>Sed non.</h2>
+        <p>Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo
+            sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus
+            convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor,
+            viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p>
+    </div>
+
+    <!--
+        <script type='text/javascript'>
+        var datos =<%-JSON.stringify(informacion)%>;
+        var inf = datos[0].informacion;
+        document.getElementById('informacion').innerText += inf;
+    </script>
+    -->
+    
+
+</body>
+
+</html>
