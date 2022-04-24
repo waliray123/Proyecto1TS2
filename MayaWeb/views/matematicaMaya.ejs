@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematica maya</title>
+</head>
+<body>
+    <div id="encabezado">
+        <%- include('encabezado') %>
+    </div>
+    <link rel="stylesheet" href="resources/stylesheets/estilomateMaya.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <div class="cont">
+        <p><%= name %> </p> 
+        <div class="game-inicio" id="game-inicio">
+            <div class="general-simbolo">
+                <img src="resources/images/numeros_mayas/numeros_mayas_0-19_blanco.png">
+            </div>
+            <div class="simbolos">
+                <div class="simbolo">
+                    <p>representa 0</p>
+                <img src="resources/images/numeros_mayas/0.png">
+                </div>
+                
+                <div class="simbolo">
+                    <p>representa 1 unidad</p>
+                <img src="resources/images/numeros_mayas/1.png">
+                </div>
+                
+                <div class="simbolo">
+                    <p>representa 5 unidades</p>
+                <img src="resources/images/numeros_mayas/5.png">
+                </div>
+            </div>
+            <div class="btn-init">
+                <button onclick="startGame();" >Iniciar</button>
+            </div>
+        </div>
+        <div id="game">
+            <h1>Suma Matematicas Mayas 😀</h1>
+            <div id="showPoints"></div>
+            <div class="centerdiv">
+                <div class="insertbox">
+                    <div class="box1" id="number1">
+                    </div>
+                    <div class="box1">
+                        <p>+</p>
+                    </div>
+                    <div class="box1" id="number2">
+                    </div>
+                </div>
+                <div class="middlebox">
+                    <input type="number" id="answ">
+                </div>
+                <div class="btn-init" >
+                    <button id="btn-checkAnsw" onclick="checkAnsw();" >Revisar respuesta</button>
+                </div>
+
+            </div>
+            
+        </div>
+        <script src="resources/js/scriptMateMaya.js"></script>
+    </div>
+</body>
+</html>
