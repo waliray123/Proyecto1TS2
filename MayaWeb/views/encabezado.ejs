@@ -13,21 +13,23 @@
         <li><a href="/matematica-maya">Matematica Maya</a></li>
         <img src="/resources/images/trivia/trivianav.png" />
         <li><a href="/trivia">Trivia</a></li>
+        <img src="/resources/images/trivia/user.png" />
         <li><a href="/puntuaciones">Puntuaciones</a></li>
-        <img src="/resources/images/trivia/user.png" />        
-        <%if(name){%>
+        <%if(name != 'Debe iniciar sesión'){%>
             <li>
                 <a>
                     <%-name%>
                 </a>
             </li>
-            <%}%>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
+            <%} else {%>
+                <li><a href="/login">Login</a></li>
+                <%}%>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
 
-                <input type="search" />
+                    <input type="search" />
     </ul>
 </nav>

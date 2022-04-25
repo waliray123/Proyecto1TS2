@@ -127,15 +127,12 @@ function convertDate() {
     lcd_string = "";
     (jQuery).each(longCount, function(i, el) {
         //for long count, iterate through array. numbers will be in correct order to determine glyph
-        (jQuery)('.calendar-glyph[rel="' + i + '"]').find('div.numeral').css('background-image', 'url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/numerals/' + el + '.png)');
+        (jQuery)('.calendar-glyph[rel="' + i + '"]').find('div.numeral').css('background-image', 'url(/resources/images/numerals/' + el + '.png)');
         lcd_string += (i < 4) ? el + "." : el;
     });
 
 
-    //calculate lord of the night
-    var night = toLN(parseInt(longCount[3]), parseInt(longCount[4]));
-    (jQuery)('#night-date').text(night);
-    (jQuery)('#night.calendar-glyph').css('background-image', 'url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/night/g' + night + '.png)');
+
 
 
 
@@ -161,8 +158,8 @@ function convertDate() {
 
     var tzolkinDate = toTD(toJDN(m, d, y));
 
-    (jQuery)('#tzolkin.calendar-glyph').find('div.numeral').css('background-image', 'url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/numerals/' + tzolkinDate.numeral + '.png)');
-    (jQuery)('#tzolkin.calendar-glyph').css('background-image', 'url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/tzolkin/tzolkin' + tzolkinDate.symbol + '.png)');
+    (jQuery)('#tzolkin.calendar-glyph').find('div.numeral').css('background-image', 'url(/resources/images/numerals/' + tzolkinDate.numeral + '.png)');
+    (jQuery)('#tzolkin.calendar-glyph').css('background-image', 'url(/resources/images/tzolkin/tzolkin' + tzolkinDate.symbol + '.png)');
 
     (jQuery)('#tzolkin-date').text(tzolkinDate.numeral);
     (jQuery)('#tzolkin-month').text(tzolkinDate.month);
@@ -171,8 +168,8 @@ function convertDate() {
     //calculate haab date
     var haabDate = toHD(toJDN(m, d, y));
     //console.log(haabDate);
-    (jQuery)('#haab.calendar-glyph').find('div.numeral').css('background-image', 'url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/numerals/' + haabDate.numeral + '.png)');
-    (jQuery)('#haab.calendar-glyph').css('background-image', 'url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/haab/haab' + haabDate.symbol + '.png)');
+    (jQuery)('#haab.calendar-glyph').find('div.numeral').css('background-image', 'url(/resources/images/numerals/' + haabDate.numeral + '.png)');
+    (jQuery)('#haab.calendar-glyph').css('background-image', 'url(/resources/images/haab/haab' + haabDate.symbol + '.png)');
 
     (jQuery)('#haab-date').text(haabDate.numeral);
     (jQuery)('#haab-month').text(haabDate.month);
