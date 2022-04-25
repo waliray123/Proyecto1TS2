@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/stylesheets/estiloRueda.css">
+    <title>Calendario cholquij</title>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js '></script>
+    <script src="/resources/js/scriptRueda.js"></script>
+    <style>
+        html {
+            background-image: url('/resources/images/imgPrincipal/seccion2.jpg');
+            background-size: 100%;
+        }
+        nav ul>li:nth-of-type(4) {
+            border-bottom: none;
+        }
+        nav ul>li:nth-of-type(3) {
+            background-color: #2a2c38;
+            border-bottom: 2px solid #14c98f;
+        }
+        #elementos{
+            text-align: left;
+        }
+        .section-title{
+            color: #14c98f;
+        }
+        hr{
+            margin: 1.2em 0;
+            border-color: #14c98f;
+            border-style: dotted;
+        }
+    </style>
+</head>
+
+<body class="text-center">
+    <%- include('encabezado') %>
+
+        <div class="fullscreen nopadding">
+            <div class="header">
+                <h1>CALENDARIO CHOLQUIJ</h1>
+            </div>
+        </div>
+
+        <div class="white nopadding more">
+            <a id="more">&#x25BC; More &#x25BC;</a>
+        </div>
+
+        <div class="white">
+            <a id="test"></a>
+            <h1>Informacion</h1>
+            <!-- <img class="floatleft redondo" src="/resources/images/imgRueda/rueda1.jpg" /> -->
+            <div>
+                El Cholq´ij deriva su nombre de los términos maya-k´iche´:
+                <br><br>
+                Chol: Contar cosas puestas en orden
+                <br>
+                Q´ij: el sol o día
+                <br><br>
+                El Cholq’ij es un calendario sagrado del pueblo Maya, compuesto por 260 días divididos en 13 meses. También recibe el nombre de calendario ritual o calendario sagrado o Tzolkin (Barrios, 2004; García, Curruchiche & Taquirá, 2009; Aj Xol Ch’ok, 2008; Rupflin, 1999).
+                <br><br>
+                “El Cholq´ij es uno de los instrumentos que los Abuelos del Pueblo maya crearon; tiene dos aplicaciones principales, la primera: ubica momentos para actividades colectivas; la segunda: tiene una aplicación individual para identificar la conducta natural o la forma de ser de las personas por medio de su nawal, es decir, los rasgos psicológicos básicos, positivos y negativos.
+                <br><br>
+                Este calendario fue configurado a partir de los movimientos que la Luna realiza en su órbitta alrededor de la Tierra. Así como el calendario AB’ agrícola o solar de 365 días está configurado en base al movimiento de traslación de la Tierra alrededor del Sol y es identificado como energía masculina.
+                <br><br>
+                Por otra parte, el Choloq’ij o calendario sagrado es considerado energía femenina, por su relación con los movimientos de la Luna y por la influencia que este cuerpo celeste ejerce sobre los organismos femeninos de la naturaleza y los seres humanos.”
+                <br><br>
+            </div>
+        </div>
+        <div class="white">
+            <h1>Nahual</h1>
+            <p>
+                Nahual, también llamado nagual o nawal​ (en náhuatl: nahualli ‘oculto, escondido, disfraz’), dentro de las creencias mesoamericanas, es una especie de brujo o ser sobrenatural que tiene la capacidad de tomar forma animal. El término refiere tanto a la persona que tiene esa capacidad como al animal mismo que hace las veces de su alter ego o animal tutelar.<br><br>
+                De acuerdo con la tradición y cosmovisión de los pueblos Mesoamericanos los Nahuales son espíritus y energías protectoras que acompañan a todos los elementos de la naturaleza, incluyendo a los humanos y animales a lo largo de toda su existencia.<br><br>
+                Para la civilización Maya el nahual de cada persona era de suma importancia. Era algo que todos debían conocer y aprender a manejarlo. Debían saber cuándo se fue engendrado, la fecha de nacimiento, el año, la energía que le protege y su misión.<br><br>
+                Dentro de la cultura maya se dice que cada uno está relacionado con un animal que es quién le dirige, como un ángel guardián, alguien con quien se identifica, con quien se encuentra conectado espiritualmente. Se dice también que cada persona incluso nace con el espíritu de un animal, y este se encarga de protegerlo y guiarlo.<br><br>
+            </p>
+            <section id="elementos">
+                <div class="container">
+                    <div class="row about-container">
+                        <div class="section-header">
+                            <h3 class="section-title">Elementos</h3>
+                        </div>
+                        <h4 id="Tzikin">Tzikin</h4><h5>Significado</h5> <p>Pajaro</p><p></p><p>
+            <strong>Características:</strong>
+            Significa pájaro. Es el símbolo de la suerte, la fortuna y los bienes materiales. También es símbolo de libertad y es el nawal de las aves.
+          </p>
+          <p>
+            Simboliza el pájaro sagrado Q’uq’umatz. Este día es propicio para pedir por la abundancia de los bienes como el dinero.
+            Se quema el ajonjolí y el chocolate como ofrendas a Ajaw. Se encienden candelas de colmena pura y se le pide a Ajaw un buen negocio.
+            Tz’ikin significa pájaro y simboliza la intermediación entre los seres humanos y Ajaw, representado por todo lo que hay en el espacio:
+            el aire, las nubes, el frío y el calor. Son fuerzas invisibles, pero que El Corazón del Cielo y El Corazón de la Tierra las ha puesto
+            a nuestro servicio y protección.
+          </p>
+          <p>
+            También es un día de desarrollo espiritual y, por tanto, de  la plena realización humana.
+            Es el día para agradecer los bienes materiales principalmente lo relacionado a dinero.
+            Sin embargo, al no agradecer estos favores también puede traer la miseria.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Agradecimiento por los bienes materiales, principalmente lo del dinero.</li>
+            <li> Propicia buena suerte en el negocio.</li>
+            <li> Día de invocación porque las aves no molesten los sembradíos.</li>
+            <li> Día para la protección del negocio.</li>
+            <li> Día para realizar invocaciones para que las siembras estén protegidas de los animales.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Kej <strong>destino:</strong> Aq'ab'al</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Es bueno para el negocio.</li>
+            <li> Es mensajero, paciente y amable.</li>
+            <li> De buen temperamento.</li>
+            <li> Tiene habilidad para el análisis y es buen observador.</li>
+            <li> Desarrolla mejor su inteligencia.</li>
+            <li> Puede tener dotes para la predicción de las cosas.</li>
+            <li> Puede ser afortunado en lo material.</li>
+            <li> Puede tener bien desarrollado la parte espiritual.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Envidia</li>
+            <li> Infidelidad</li>
+            <li> Avaricia</li>
+            <li> Tacañería</li>
+            <li> En algún vicio</li>
+          </ul><p></p> <hr><h4 id="Ajmaq">Ajmaq</h4><h5>Significado</h5> <p>Búho, falta o culpa</p><p></p><p>
+            <strong>Características:</strong>
+            Esta palabra significa pecador en K’iche’.  Es el día de los pecadores.  Este día se dedica a pedir perdón por los pecados y por los pecadores.
+            Es el día dedicado a los difuntos.  El pecado es una columna de humo que nos oculta delante de la presencia de Dios.
+            Nuestros antepasados dijeron:  “que el pecado es la ofensa que se hace directamente a Dios.
+            No creer, no servir, no alabar al Corazón del Cielo, al corazón de la Tierra.  Mak es ofensa a Dios y Wuqub’ qak’ix  es ofensa al prójimo”
+          </p>
+          <p>
+            Es el día de los que no podemos ver, el día de los difuntos.  El día de la fortaleza que nos da la historia de nuestro pasado.
+            También es el día del castigo cuando no estamos actuando en concordancia con las enseñanzas que ellos nos legaron.  Es el día del enojo de los difuntos. (BEA)
+          </p>
+          <p>
+            “Ajmaq no es un mal día.  Es un día para pedir perdón por los pecados.
+            Son  los días en los cuales se reza por protección, ya que de estos días puede venirle a uno, daño por sus pecados o sus malos pensamientos.
+          </p>
+          <p>
+            es la muerte en casa, la muerte natural por enfermedad, la muerte tranquila.
+            En ese día se habla con los difuntos, es para pedir perdón en el caso de los pecadores.
+          </p>
+          <p>
+            <strong>Significa:</strong>
+          </p>
+          <ul>
+            <li> Purificar el espíritu de los muertos y vivos.</li>
+            <li> Día para conmemorar los difuntos.</li>
+            <li> Perdón para nuestros pecados.</li>
+          </ul>
+          <p><strong>Significado Clave:</strong> Autoridad y Estatus.</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Posee sabiduría, inteligencia</li>
+            <li> Buena memoria</li>
+            <li> Muy valiente</li>
+            <li> Se les facilita el diálogo</li>
+            <li> Prudente, discreto</li>
+            <li> Buenos maestros y consejeros</li>
+            <li> Muy sociable</li>
+            <li> Es profundo</li>
+            <li> Es serio</li>
+            <li> Realista</li>
+            <li> Predicador</li>
+            <li> Comunicativo</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Pecador</li>
+            <li> Enamorado</li>
+            <li> Alcohólico</li>
+            <li> Destructores de la herencia</li>
+            <li> Mentirosos</li>
+            <li> Afamados</li>
+            <li> Resentido</li>
+            <li> Ladrón</li>
+            <li> Adúltero</li>
+            <li> Fríos e insensibles</li>
+            <li> Minimizan los sentimientos de los demás</li>
+            <li> Interesados en la autoridad y posición social y política</li>
+          </ul><p></p> <hr><h4 id="No" j'="">No'j</h4><h5>Significado</h5> <p>Idea o sabiduria</p><p></p><p>
+            <strong>Características:</strong>
+            Es la sabiduría y el conocimiento. Es el nawal de la inteligencia. Es el buen consejo, según los abuelos y abuelas.
+            Es la sabiduría que viene del Formador y Creador. También es uno de los Cargadores del Tiempo.
+            Día propicio para agradecer el conocimiento y pedir buenos pensamientos.
+          </p>
+          <p>
+            El que nace bajo la influencia del No’j será inteligente, activo y tendrá buenos pensamientos, siempre y cuando sepa manejar las energías del día.
+            Significa también idea y sabiduría. Según los mayas ningún hombre es sabio. Por eso, el hombre, para recibir ideas y consejos,
+            debe consultar al Ajaw por medio del “xukulem” o la ceremonia maya. También puede realizar dichas consultas por medio del tz’ite’,
+            mediante la intermediación del Ajq’ij, para recibir los consejos de los abuelos y abuelas. Dentro de la espiritualidad maya,
+            el hombre tiene ideas pero no sabiduría. Por eso, es importante juntarse en consejo para unir ideas y formar así  una ciencia.
+            Nuestros antepasados se reunían en consejo bajo la protección del No’j.
+          </p>
+          <p>
+            es el día de la sabiduría. Es el día  para tomar decisiones de manera particular o en consejo. Es un día que propicia la planificación de algún proyecto y de los
+            lineamientos a seguir en la conducción de la comunidad y de la sociedad en general. También es el día en que nuestro pensamiento puede tener mayor fluidez.
+          </p>
+          <p>
+            <strong>Función espiritual:</strong>
+          </p>
+          <ul>
+            <li> Agradecer el conocimiento y las ideas.</li>
+            <li> Agradecer la inteligencia.</li>
+            <li> Día para acrecentar la memoria.</li>
+            <li> Agradecer la inteligencia.</li>
+            <li> Día para pedir buenos consejos.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Toj <strong>destino:</strong> Kan</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Es poseedor de muchos conocimientos.</li>
+            <li> Es inteligente y es consejero.</li>
+            <li> Puede llegar a ser científico.</li>
+            <li> Es ordenado y creativo.</li>
+            <li> Es justo y humanista.</li>
+            <li> Es buen estudiante.</li>
+            <li> Puede llegar a ser un buen líder.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede caer en el orgullo.</li>
+            <li> Se puede enojar con facilidad.</li>
+            <li> Le cuesta tomar decisiones.</li>
+            <li> Puede ser individualista y egoísta.</li>
+          </ul><p></p> <hr><h4 id="Tijax">Tijax</h4><h5>Significado</h5> <p>Pedernal o obsidiana</p><p></p><p>
+            <strong>Características:</strong>
+            Significa piedra y obsidiana. Es el símbolo del pedernal. Es la energía de la persona que cura en la cultura maya.
+            Es el poder del trueno y el rayo. La persona que nace bajo la influencia de este día, puede ser un gran curandero o médico con mucha energía en las manos.
+            Es ajq’íj, cura enfermedades físicas y psicológicas. Puede arreglar fracturas de los huesos.
+          </p>
+          <p>
+            Una de las influencias negativas del día es que puede causar algún sufrimiento o malestar. Según los Ajq’ijab’, es un día que “come”.
+            Para no ser alcanzado por estas influencias negativas debe hacerse alguna ofrenda y solicitar la intermediación del Guía Espiritual.
+          </p>
+          <p>
+            Es un día que puede evitar la humillación y la ruina a causa de algo o alguien. Es un día de protección.
+            Los que nacen es este día pueden llegar a ser coléricos y pueden destruir espiritual o emocionalmente a alguien.
+            A veces, nadie les aguanta y resulta difícil comprenderlos.
+          </p>
+          <p><strong>Su origen:</strong> Tz'i <strong>destino:</strong> Keme</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Es protector de la justicia.</li>
+            <li> Es fuerte y servicial.</li>
+            <li> Es incansable por lo que quiere lograr.</li>
+            <li> Puede llegar a ser Guía Espiritual.</li>
+            <li> Posee habilidad para arreglar fracturas en los huesos.</li>
+            <li> Se puede defender muy bien ante cualquier problema.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede ser violento y enojado.</li>
+            <li> Puede sufrir enfermedades.</li>
+            <li> Puede ofenderse fácilmente.</li>
+            <li> Puede caer en la venganza y en los pleitos.</li>
+          </ul><p></p> <hr><h4 id="Kawoq">Kawoq</h4><h5>Significado</h5> <p>Trueno o dificultad</p><p></p><p>
+            <strong>Características:</strong>
+            Es el nawal de la mujer como comadrona. Es el día de la Vara Espiritual, le Pisom Q’aq’al. Es el relámpago.
+            Es la dualidad del fuego sagrado en función de la espiritualidad maya. Es el día de la comunidad, de la familia, del grupo y de la sociedad.
+            Es la energía que facilita las lluvias para darnos buenas cosechas, principalmente la del maíz.
+          </p>
+          <p>
+            Proporciona capacidad y habilidad para curar y orientar. Es la energía que fortalece a las Guías Espirituales. Mantiene la energía y la fertilidad.
+            Es un día de mucha relación con la Madre Tierra y los elementos al proveer sabiduría para el manejo de las plantas medicinales.
+            Facilita la unidad y el cuidado de la familia. Es el día de la mujer como esposa y madre que calienta el seno del hogar.
+            También es un día especial para la plena realización de la mujer en la comunidad y en la sociedad.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Día del terapeuta (el que arregla huesos) y de la comadrona.</li>
+            <li> Uno de los días para tratar enfermedades.</li>
+            <li> Día para invocar por la familia (hogar) y la comunidad.</li>
+            <li> Uno de los días especiales para pedir lluvia.</li>
+            <li> Día para invocar para que los niños y niñas al nacer no vengan con defectos físicos.</li>
+          </ul>
+          <p><strong>Su origen:</strong> B'atz' <strong>destino:</strong> Kej</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Es equilibrado y cariñoso.</li>
+            <li> Vive y trabaja por su familia.</li>
+            <li> Si es mujer, puede ser comadrona.</li>
+            <li> Puede llegar a ser Guía Espiritual.</li>
+            <li> Es buen comunicador y expositor.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede caer en el enojo.</li>
+            <li> A veces es perseguido por los problemas y los pleitos.</li>
+            <li> No es muy afortunado en el amor.</li>
+            <li> Se le puede culpar de todo lo que pasa.</li>
+            <li> Muy hablador.</li>
+            <li> Se puede meter en donde no es llamado.</li>
+          </ul><p></p> <hr><h4 id="Ajpu">Ajpu</h4><h5>Significado</h5> <p>Cerbatanero o señor principal</p><p></p><p>
+            <strong>Características:</strong>
+            Es la luz y es la representación del Abuelo Sol. Significa cerbatanero, cazador, tirador y caminante.
+            Es el día de la fuerza corporal y del triunfo del bien sobre los obstáculos.
+            Es la representación del triunfo de Jun Ajpu e Ixbalamke sobre los señores de Xib’alb’a. Esta señal le fue dada a la abuela Ixmukane
+            cuando retoñó el cañaveral que sembraron los dos muchachos en el patio de la casa.
+          </p>
+          <p>
+            Es el día del gran Ajaw, el padre y su representación solar, el día de la grandeza, de la fuerza de la vida.
+            Es el que trae luz y claridad a los seres humanos y sobre toda la humanidad.
+          </p>
+          <p>
+            Es la fuerza regenerativa, el ciclo de la vida. La facultad para tener a toda la galaxia.
+            Rige los eclipses lunares y solares. Es el momento de servir a los demás.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Día para ofrendar a los abuelos y abuelas fallecidas.</li>
+            <li> Día propicio para tratar enfermedades.</li>
+            <li> Se pide la vida y la fuerza.</li>
+            <li> Día para pedir el triunfo del bien sobre el mal.</li>
+          </ul>
+          <p><strong>Su origen:</strong> E <strong>destino:</strong> Q'anil</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Puede desarrollar mejor la inteligencia.</li>
+            <li> Puede tener dotes de artista.</li>
+            <li> Es alegre.</li>
+            <li> Se defiende muy bien.</li>
+            <li> Puede llegar a ser Guía Espiritual.</li>
+            <li> Es bueno para la cacería.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede caer en el enojo.</li>
+            <li> Puede ser tajante.</li>
+            <li> Es delicado.</li>
+            <li> Puede enfermarse.</li>
+            <li> Puede evadir responsabilidades.</li>
+            <li> Le dificulta aceptar correcciones.</li>
+            <li> Puede tener una actitud autosuficiencia.</li>
+          </ul><p></p> <hr><h4 id="Imox">Imox</h4><h5>Significado</h5> <p>Locura o pez</p><p>  </p><p>
+            <strong>Características:</strong>
+            Símbolo de las fuerzas ocultas del universo manifestadas en demencia. “Imox” es el nombre de  todas las cosas secretas.
+            En general, es un día de influencias negativas. Es un día peligroso. Es símbolo del hemisferio izquierdo, la parte sutil de los seres humanos,
+            es la sensibilidad. Es la esencia de nuestra conciencia y de nuestra mente.
+          </p>
+          <p>
+            Es el nawal o espíritu del agua. Genera movimiento pero, también, descontrol emocional. Es un día con influencias negativas
+            y los que nacen en este día pueden convertirse en busca pleitos. Por eso, el día es propicio para las ceremonias de limpieza emocional.
+          </p>
+          <p>
+            Significa idiotez y locura. Es un día especial para pedir la abundancia de agua. Día para invocar por los ríos y
+            nacimientos de agua para que no se sequen. Su trabajo es ayudar al hemisferio derecho del cerebro a realizar un mejor trabajo y a tomar una buena actitud.
+          </p>
+          <p>
+            Es el día de la perturbación mental o de la equivocación.  No es indicado para tomar decisiones. Es el día en que se puede implorar y limpiar
+            las perturbaciones provocadas por el enemigo en todos los órdenes de la vida.
+          </p>
+          <p>
+            <strong>Funcion Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Tratamiento de las perturbaciones mentales.</li>
+            <li> Día especial para invocar por el agua.</li>
+            <li> Invocaciones para mantener el equilibrio mental, espiritual, físico y emocional.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Aj <strong>destino:</strong> Toj</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Puede desarrollar la clarividencia.</li>
+            <li> Puede captar los mensajes y señales de la naturaleza.</li>
+            <li> Puede desarrollar con mayor grado su hemisferio izquierdo.</li>
+            <li> Puede tener buenas iniciativas.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Se le olvida con facilidad las cosas.</li>
+            <li> Puede resultar muy inseguro.</li>
+            <li> Puede tener reacciones violentas.</li>
+            <li> Es ordenado en sus cosas.</li>
+            <li> Puede tener un carácter variado.</li>
+          </ul><p></p> <hr><h4 id="Iq" '="">Iq'</h4><h5>Significado</h5> <p>Viento o luna</p><p></p><p>
+            <strong>Características:</strong>
+            Es el viento y la vida. Es nawal de la lluvia. Es el día del Corazón del Cielo y Corazón de la Tierra. Es el aire y el soplo sagrado que da fuerza y vida.
+            En este día se le pide al viento que se lleve los sufrimientos o las enfermedades de la persona.
+          </p>
+          <p>
+            Significa aire y aliento de vida. También, es el nawal de Junraqan (Huracán) convertido en tornado. Es uno de los Cargadores del Tiempo.
+            Es, también, la respiración de la persona. Es el soplo sagrado, suave y apacible purificador del cuerpo, de la mente, del espíritu y de las emociones.
+            Es el espacio invisible existente entre la materia. Es uno de los elementos que produce los fenómenos naturales.
+          </p>
+          <p>
+            El niño que nace en Iq’ es un niño que hace de todo pero no llega a nada. Es como el aire que toca y arrastra todo lo que encuentra en su camino.
+            Puede construir pero también destruye.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Es día propicio para efectuar ceremonias al espíritu del aire o viento.</li>
+            <li> Día para tratar enfermedades respiratorias, psicológicas y emocionales.</li>
+            <li> Día de invocación para que el aire no destruya las siembras.</li>
+          </ul>
+          <p><strong>Su origen:</strong> I'x <strong>destino:</strong> Tz'i'</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Puede adaptarse a cualquier situación.</li>
+            <li> Posee fuerza física.</li>
+            <li> Es soñador e imaginativo.</li>
+            <li> Puede tener ideas futuristas.</li>
+            <li> No asusta casi nada.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> De carácter muy fuerte.</li>
+            <li> Puede resultar inseguro e impulsivo.</li>
+            <li> Puede caer en la infidelidad con su pareja.</li>
+            <li> Puede sufrir algunos problemas sociales y económicos.</li>
+            <li> Le encanta decir directamente las cosas.</li>
+          </ul><p></p> <hr><h4 id="Aq" ab'al'="">Aq'ab'al</h4><h5>Significado</h5> <p>Amanecer, aurora y mano</p><p></p><p>
+            <strong>Características:</strong>
+            Es el símbolo de la mano y de la aurora formada por los primeros rayos del sol que se asoman sobre
+            las montañas para disipar las tinieblas y la oscuridad de la noche.
+          </p>
+          <p>
+            Significa amanecer, aurora, luz, claridad, nuevo día. Es la renovación de energía.
+            Es la llegada de la luz, del crepúsculo, la luz que se asoma detrás de los cerros y montañas.
+          </p>
+          <p>
+            Es el día del amanecer, del futuro promisorio que esperamos cada día, los mejores días para nuestro pueblo y para cada persona en particular.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Aclara los conocimientos.</li>
+            <li> Aclara el camino de la vida.</li>
+            <li> Conduce a nuevas oportunidades de la vida.</li>
+            <li> Ilumina las cosas ocultas.</li>
+            <li> Día para agradecer la creación del ser humano.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Tz'ikin <strong>destino:</strong> Batz'</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Es madrugador, alegre y sereno.</li>
+            <li> Puede tener buen carácter.</li>
+            <li> Puede tener dotes para tratar enfermedades.</li>
+            <li> Puede ser Guía Espiritual.</li>
+            <li> Son fuertes, dinámicos y astutos.</li>
+            <li> Puede tener seguridad mental y física.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> No es bien reconocido en su tierra.</li>
+            <li> Puede encontrar el fracaso.</li>
+            <li> Puede caer en la mentira y la traición.</li>
+            <li> Puede tener dificultades en lo económico.</li>
+            <li> Es un poco reservado y aislado.</li>
+          </ul><p></p> <hr><h4 id="K" at'="">K'at</h4><h5>Significado</h5> <p>Red, cautiverio o iguana</p><p></p><p>
+            <strong>Características:</strong>
+            Está relacionado con la palabra k’atik que significa arder. Símbolo del fuego y de la red. En el ritual se hace mención del día como
+            tiempo para el enredo y el desenredo. Es el que enreda y desenreda la vida.
+          </p>
+          <p>
+            Es la red donde se guarda la mazorca. La red con la que se pesca. La red donde mueren los peces. Significa cautiverio y ausencia de libertad.
+            Signo de opresión que se ejerce sobre una comunidad.
+          </p>
+          <p>
+            Es el trastecito o el bracero que le entregan a uno cuando recibe el Pisom Q’aq’al o la Vara Sagrada.
+            Para los nacidos en K’at, en la espiritualidad maya, se les recomienda visitar al Ajq’ij cada veinte días para efectuar su ceremonia.
+            De lo contrario, pueden tener muchos enredos en el camino, en el trabajo y en la vida.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Se puede pedir por la liberación de algún preso.</li>
+            <li> Pedir porque el parto sea normal.</li>
+            <li> Día del desenvolvimiento e investigación de la ciencia.</li>
+            <li> Día para arreglar problemas emocionales y de amor.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Ajmaq <strong>destino:</strong> E</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Persona sincera y ordenada.</li>
+            <li> Puede ser líder.</li>
+            <li> Puede ser una persona muy afortunada en lo económico.</li>
+            <li> Puede ser Guía Espiritual.</li>
+            <li> Persona muy activa y curiosa.</li>
+            <li> Puede recordar las cosas facilidad.</li>
+            <li> Puede ser muy tajante en su decisión.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede caer en los chismes y en el enojo.</li>
+            <li> Puede resultar nervioso.</li>
+            <li> Puede perder las cosas con facilidad.</li>
+            <li> Puede estar propenso a malas influencias.</li>
+            <li> Puede caer en el individualismo.</li>
+            <li> Puede caer en el orgullo.</li>
+            <li> Con tendencia a meterse en los problemas ajenos.</li>
+          </ul><p></p> <hr><h4 id="Kan">Kan</h4><h5>Significado</h5> <p>Serpiente emplumada</p><p> </p><p>
+            <strong>Características:</strong>
+            Significa movimiento, Es el símbolo de la Gran Energía que creó el Universo. Es la Serpiente Emplumada o Q’uq’umatz.
+            Es la evaluación humana y el desarrollo espiritual. Es la Sabiduría y el ciclo del tiempo. Es guardián del bosque. Es el día de la transformación.
+          </p>
+          <p>
+            significa justicia y equilibrio. Es un día muy fuerte y “enojado”. Es un día que puede traer malas influencias como el enojo y la riña.
+            Sin embargo, es un símbolo de la verdad y es rápido e implacable cuando la justicia señala a alguien el lugar de los perdedores.
+            La energía del día se presta para la solución de problemas.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Invocaciones por la igualdad y justicia.</li>
+            <li> Día para desarrollar la fuerza física.</li>
+            <li> Día para desarrollar el fuego interior y la evolución espiritual.</li>
+            <li> Uno de los días para realizar invocaciones por la lluvia.</li>
+            <li> Día para alejar el enojo, la timidez y el mal carácter.</li>
+          </ul>
+          <p><strong>Su origen:</strong> No'j <strong>destino:</strong> Aj</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Persona con mucho conocimiento.</li>
+            <li> Puede tener mucha habilidad para la intuición.</li>
+            <li> Muy inteligente.</li>
+            <li> Practica la sinceridad y la justicia.</li>
+            <li> Puede llegar a ser líder.</li>
+            <li> Puede tener habilidad para los pronósticos y la clarividencia.</li>
+            <li> Puede ser Guía Espiritual.</li>
+            <li> Es humilde.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede estar influenciado por el enojo y la traición.</li>
+            <li> Puede caer en el resentimiento y la avaricia.</li>
+            <li> Es desconfiado y sorpresivo.</li>
+          </ul><p></p> <hr><h4 id="Kame">Kame</h4><h5>Significado</h5> <p>Muerte o dueño de la oscuridad</p><p></p><p>
+            <strong>Características:</strong>
+            Es el símbolo de la muerte. Símbolo de la disolución final de todas las cosas, buenas y malas. Significa tecolote y muerte.
+            Es el renacimiento. Significado que se expresa a través de los sagrados granos de Tz’ite’ o Palo de Pito. Es día propicio para
+            pedir por la salud de los enfermos y para hacer ofrendas porque progrese el negocio.
+          </p>
+          <p>
+            Es la energía de las personas que mueren de manera natural. Puede restar fuerza a una persona o fortalecerla. Pronostica lo bueno y lo malo.
+            Es la comunicación con las abuelas y abuelos a través de las candelas de cebo que se ofrecen en las ceremonias.
+            Prudencia y protección para evitar accidentes. Es el Juez Supremo de todas las cosas. Nawal de la enfermedad y de la muerte.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Es un día bueno para el negocio.</li>
+            <li> Día especial para comunicarse con los ancestros.</li>
+            <li> Fortalecimiento de la vida.</li>
+            <li> Día para pedir protección en los viajes.</li>
+            <li> Día para contrarrestar enfermedades.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Tijax <strong>destino:</strong> I’x</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Puede ser médico.</li>
+            <li> Es fuerte ante sus enemigos.</li>
+            <li> Es inteligente, respetuoso y seguro.</li>
+            <li> Puede controlarse.</li>
+            <li> Puede desarrollar habilidades para la clarividencia.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede tener un temperamento fuerte.</li>
+            <li> Propenso al suicidio.</li>
+            <li> Puede sufrir mucho al no cumplir con sus obligaciones con la Madre Naturaleza.</li>
+            <li> Puede tener tendencias a la mentira y a la infidelidad con su pareja.</li>
+          </ul><p></p> <hr><h4 id="Kej">Kej</h4><h5>Significado</h5> <p>Venado</p><p></p><p>
+            <strong>Características:</strong>
+            El nawal del Kej es muy masculino y si una mujer nace en este día, tiene el carácter y voz fuertes y es de alguna manera varonil.
+          </p>
+          <p>
+            Simboliza venado, los cuatro sostenes, los cuatro pilares, es decir los cuatro puntos cardinales.
+            Es el día fuerte y bueno.  Es un día que aplasta.   Es un día que demuestra su fuerza y su poder.
+          </p>
+          <p>
+            Los que nacen en este día:  son de carácter fuerte y poseen fortaleza física.  Son buenos defensores de otras personas,
+            pero no pueden defenderse a sí mismos.  pueden ser ricos y poseer muchos bienes. generalmente gozan de buena salud pues no se enferman con facilidad.
+          </p>
+          <p>
+            Son los cuatro puntos cardinales que sostienen el mundo; sostiene  la vida del hombre.  Los que nacen en este día son caminantes y tienen  suerte en el negocio.
+          </p>
+          <p>
+            Es el día en que se pide fuerza, fortalecimiento, endurecimiento, para que uno sea duro, aguantador en caso de enfermedades, golpes, críticas,
+            que uno aguante lo duro de la vida. Los que nacen en Kej podrían ser buenos guías espirituales mayas.
+          </p>
+          <p>
+            <strong>Significado:</strong>
+          </p>
+          <ul>
+            <li> La cruz maya.</li>
+            <li> Los cuatro puntos cardinales.</li>
+            <li> Los cuatro sostenes de la tierra.</li>
+            <li> Nawal de los defensores.</li>
+            <li> Los cuatro colores de las energías.</li>
+            <li> Caballo, fuerza, aguantador.</li>
+          </ul>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Buenos defensores</li>
+            <li> Poseen riquezas</li>
+            <li> Gozan de buena salud</li>
+            <li> Son buenos guías espirituales</li>
+            <li> Son muy sociables</li>
+            <li> Son fuertes, inteligentes, responsables, positivos y triunfadores.</li>
+            <li> En el matrimonio son muy equilibrados</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede hacer el mal con su pensamiento</li>
+            <li> Tiene un carácter fuerte</li>
+            <li> Pueden ser muy compulsivos</li>
+            <li> Les gusta la popularidad y el poder</li>
+            <li> Podrían ser autocráticos, manipuladores etc.</li>
+            <li> Les gusta la comodidad</li>
+            <li> Son muy reservados</li>
+            <li> Autoritarios</li>
+            <li> Suelen ser exigentes</li>
+            <li> Les gusta hundir y aplastar a las personas.</li>
+            <li> Podrían ser necios</li>
+          </ul><p></p> <hr><h4 id="Q" anil'="">Q'anil</h4><h5>Significado</h5> <p>Semilla, simiente o conejo</p><p></p><p>
+            <strong>Características:</strong>
+            Este es un día propicio para las rogativas que se hacen con relación al maíz y para darle gracias a la divinidad de la tierra, por la cosecha de maíz.
+          </p>
+          <p>
+            Es el nawal de las cosechas. El que nace en este día es buen agricultor. Hay que buscar este tanto para la siembra como para la cosecha del maíz.
+          </p>
+          <p>
+            Simboliza los cuatro colores del maíz existentes en Meso América: rojo, negro, blanco y amarillo. Los cuatro colores de la piel de la humanidad.
+            Los cuatro puntos cardinales del universo. En este día se pide buena cosecha. Es el día del agricultor.
+          </p>
+          <p>
+            <strong>Significado:</strong>
+          </p>
+          <ul>
+            <li> Nawal de la semilla.</li>
+            <li> germinación de todos los seres vivientes.</li>
+            <li> Día de la construcción de los primeros abuelos del maíz.</li>
+          </ul>
+          <p><strong>Día de:</strong> La Fecundación y de La Germinación.</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Afortunados en las siembras o crianza de animales</li>
+            <li> Muy fértiles en tener hijos</li>
+            <li> Son buenos comerciantes</li>
+            <li> suelen tener Signos de intensa energía en su cuerpo</li>
+            <li> Extremadamente inteligentes</li>
+            <li> Les gusta hablar, debatir, leer, escribir</li>
+            <li> Aficionados al ejercicio físico o la danza</li>
+            <li> Mente compleja</li>
+            <li> Se interesan de detalles</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Padecen de dolor de cabeza, resfriados</li>
+            <li> Podrían destruir su propio hogar</li>
+            <li> Incrédulos</li>
+            <li> Creen en su imaginación</li>
+            <li> Regularmente son nerviosos</li>
+            <li> Pueden ser cobardes</li>
+            <li> Autodestructivos</li>
+            <li> Evitan las grandes  responsabilidades</li>
+            <li> Propensos a adquirir vicios relacionados con estimulantes</li>
+            <li> Muy agresivos, enojados</li>
+            <li> A veces son obsesivos, compulsivos</li>
+            <li> Llegan a donde no son llamados</li>
+            <li> Orgullosos</li>
+            <li> Suelen ser egoístas</li>
+          </ul><p></p> <hr><h4 id="Toj">Toj</h4><h5>Significado</h5> <p>Ofrenda, pago o lluvia</p><p></p><p>
+            <strong>Características:</strong>
+            Significa pago, ofrenda y agradecimiento. Se ponen presentes para el pago de alguna culpa o para enmendar algún error.
+          </p>
+          <p>
+            Es el día especial de las ofrendas. Se agradece el sol, el agua, el aire, el alimento y todo lo que nos rodea y lo que hemos recibido de la Madre Tierra.
+            Los que nacen en Toj, algunas veces, son los que pagan la deuda de la familia, por eso es que pueden sufrir problemas de salud.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Agradecimiento a Ajaw por los beneficios recibidos.</li>
+            <li> Día para ponerse en paz con Ajaw, con los abuelos y abuelas y con el prójimo.</li>
+            <li> Se hacen ceremonias para lograr el equilibrio, moral y espiritual.</li>
+            <li> Día para retirar los sufrimientos, accidentes y enfermedades.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Imox <strong>destino:</strong> No'j</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> De grandes virtudes.</li>
+            <li> Es creativo, comunicativo y dinámico.</li>
+            <li> Practica la sinceridad.</li>
+            <li> Es analista, imaginativo e intuitivo.</li>
+            <li> De carácter abierta.</li>
+            <li> Es romántico.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede sufrir enfermedades.</li>
+            <li> Puede caer en la miseria.</li>
+            <li> Puede tener inestabilidad mental.</li>
+            <li> Puede estar expuesto a accidentes.</li>
+            <li> Puede caer en el orgullo y la vanidad.</li>
+            <li> Vicioso y orgulloso</li>
+          </ul><p></p> <hr><h4 id="Tz" i''="">Tz'i'</h4><h5>Significado</h5> <p>Perro o mapache</p><p></p><p>
+            <strong>Características:</strong>
+            El antiguo significado de Tz’i’ es tepescuintle. En idioma k’iche’ es Lalo. Guardián de la milpa de la abuela Ixmukane de donde Ixk’ik’
+            trajo la red llena de mazorcas, y que le ayudó a cumplir con su tarea de una manera mágica. En el Popol Wuj significa Jun Ajpu Wuch’,
+            cazador tacuacín y Jun Ajpu Utiw, cazador coyote. También es guardián de los cerros, las montañas, las veredas y los barrancos.
+          </p>
+          <p>
+            Es la fidelidad, la autoridad y la ley. Por tanto, es el guardián de la ley natural y espiritual. Hace los papeles de secretario.
+          </p>
+          <p>
+            Puede influir en excesivas conductas sexuales. Por eso, algunos Guías Espirituales le atribuyen como símbolo del pecado, especialmente de impureza sexual.
+            El que nace en este día puede resultar muy sexual, sea hombre o mujer. La intensidad de esta conducta dependerá del numeral que acompaña al Tz’i’
+            como día de nacimiento.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Invocar por el orden y la exactitud.</li>
+            <li> Puede interpretar lo conocido y lo desconocido.</li>
+            <li> Se invoca el día para que guíe y cuide el camino.</li>
+            <li> Día para contrarrestar calumnias y ofensas.</li>
+            <li> Día de protección ante la ley.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Iq' <strong>destino:</strong> Tijax</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Atento, valiente, respetado, justo.</li>
+            <li> Es defensor de otras personas.</li>
+            <li> Es cordial.</li>
+            <li> Logra lo que busca.</li>
+            <li> Buen investigador y presiente las cosas o actos.</li>
+            <li> Enamorado.</li>
+            <li> Es el día de los abogados</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede resultar vicioso e infiel.</li>
+            <li> Puede caer en la mentira.</li>
+            <li> Puede tener mucha tendencia sexual.</li>
+            <li> Puede resultar con temperamento fuerte.</li>
+          </ul><p></p> <hr><h4 id="B" atz''="">B'atz'</h4><h5>Significado</h5> <p>Mono o hilo</p><p></p><p>
+            <strong>Características:</strong>  Es el símbolo del hombre y de la humanidad, de la realización del hombre.
+          </p>
+          <p>
+            Símbolo de continuidad con el pasado, como se ha englobado dentro del ritual. “Un buen día,  de la perpetración de las  ceremonias y costumbres de nuestros antepasados.
+          </p>
+          <p>
+            Es el día  en  que se realiza aquella parte del matrimonio en que se pide la novia, y el casamiento cuarenta días después, en un día B’atz’ con un número más alto.
+            En 8 B’atz’ se presenta públicamente el aprendiz de sacerdote maya, y cuarenta días después se realiza el agradecimiento.
+          </p>
+          <p>
+            Simboliza el tiempo.  Nuestros antepasados, los mayas representaron el tiempo imaginándolo como un hilo enrollado a un carrizo que se encuentra debajo de la tierra.
+            Este hilo se va desenrollando a medida que el tiempo pasa. La  historia se teje con el tiempo, así como el hilo  teje los vestidos. El ciclo Nuevo Maya,
+            Wajxaqib’ B’atz’, en la ceremonia se ameniza con marimba y se baila alrededor del fuego.  El  B’atz’ amarra y desata.  Se le dice B’atz’ porque gira.   Y es el talento del ser humano.
+          </p>
+          <p>
+            <strong>Significa:</strong>
+          </p>
+          <ul>
+            <li>Enlace matrimonial</li>
+            <li> Mono, hilo, amarrador</li>
+            <li> El tiempo. desarrollo de la evolución  humana, dándonos la vida</li>
+            <li> Nawal de medidor del tiempo y de toda clase de tejidos</li>
+            <li> Es un buen día para recibir el destino como sacerdote Maya</li>
+            <li> Orador, escultor, tallador y artista, música, flauta, deporte y siembra.</li>
+          </ul>
+          <p><strong>Significado Clave:</strong> La representación y el talento artístico</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Inteligente, astuto </li>
+            <li> Amable</li>
+            <li> Reservado </li>
+            <li> Suelen imitar lo que ven</li>
+            <li> Tienen buenas señales</li>
+            <li> Adinerados (Ricos)</li>
+            <li> Maestros de todas las artes</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Inseguro </li>
+            <li> Haragán</li>
+            <li> Enojado, agresivo </li>
+            <li> Envidioso, calumniador</li>
+            <li> Mala imaginación, incrédulo</li>
+            <li> Ambicioso de cualquier cosa </li>
+            <li> Débil de voluntad</li>
+          </ul><p></p> <hr><h4 id="E" '="">E'</h4><h5>Significado</h5> <p>Camino o diente</p><p></p><p>
+            <strong>Características:</strong>
+            Simboliza el camino y el destino. Es el guía. Es el que nos lleva a un punto fijo. Uno de los Cargadores del Tiempo. Es la protección de los viajeros y caminantes. Conduce la vida espiritual y material.
+          </p>
+          <p>
+            Es el que hace posible la realización humana en todos los órdenes y en todas las manifestaciones.
+            Pero también puede simbolizar los obstáculos con que los seres humanos se tropiezan en la continua búsqueda de esa realización.
+          </p>
+          <p>
+            Es un día bueno para desplazarse en cualquier lugar. En caso de peligro, el Ajaw E es el que da la protección.
+            También es día bueno para agradecer el bienestar físico, la vida misma de las personas y el trabajo. Es un día muy sagrado.
+            Por esta razón, se puede pedir su protección, como dice el Popol Wuj “que no se caigan en la bajada ni en la subida del camino.
+            Que no encuentren obstáculos ni detrás ni delante de ellos, ni cosa que los golpee. Concédeles buenos caminos, hermosos caminos planos…”.
+          </p>
+          <p>
+            Es el viaje, la travesía y el trayecto.  Se ofrecen ceremonias o invocaciones para que limpie el camino de los peligros y de los accidentes.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Protección ante las tentaciones</li>
+            <li> Protección ante los peligros del camino</li>
+            <li> Día para iniciar un proyecto</li>
+            <li> Día de protección de los pilotos</li>
+            <li> Día para encauzar mejor el destino</li>
+          </ul>
+          <p><strong>Su origen:</strong> K'at <strong>destino:</strong> Ajpu</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Es amable y trabajador</li>
+            <li> Es guía y consejero</li>
+            <li> Es cariñoso y alegre </li>
+            <li> Es viajero y puede ser comerciante</li>
+            <li> Afortunado, decidido, comprensivo</li>
+            <li> Cuidadoso en las cosas</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Desconfiado e inseguro</li>
+            <li> Algunas veces se puede resentir</li>
+            <li> Es variable con su carácter</li>
+            <li> Es nervioso y frágil</li>
+            <li> Impaciente en algunas ocasiones</li>
+          </ul><p></p> <hr><h4 id="Aj">Aj</h4><h5>Significado</h5> <p>Caña o cañaveral</p><p></p><p>
+            <strong>Características:</strong>
+            Simboliza caña veral y milpa. Todo lo que se relaciona al hogar y la familia. Es el símbolo que dejó Jun Ajpu Ixb’alamkej de su vida,
+            cuando sembró la caña en medio del patio de la casa de la abuela Ixmukane. Aj es símbolo de la resurrección de Jun Ajpu e Ixb’alamkej,
+            quienes no murieron en manos de los señores de Xib’alb’a. Es el triunfo del bien sobre el mal.
+          </p>
+          <p>
+            Es el destino representado por el Nawal o los Nawales. 8 Aj es el día en el cual se establece el destino de uno, para llamarlo y reconocerlo.
+          </p>
+          <p>
+            también es elote, maíz tierno.  Día relacionado con todo lo que concierne a los niños.
+            Es día bueno y sobre todo para rezar por las criaturas.
+          </p>
+          <p>
+            También es el día de la enfermedad debilidad en el tejido óseo, pero de mucha energía espiritual.
+            Es el hogar, la casa, todo lo que se relaciona con la casa. Los que nacen en Aj pueden ser sacerdotes mayas.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> El hogar y la familia de todas las generaciones tiernas; 8 Aj se celebra el día del niño.</li>
+            <li> El bastón del poder de las virtudes divinas, sensatez, la palabra sagrada.</li>
+            <li> Caña, símbolo que dejó Jun Ajpu Ixbalanke de su vida, cuando sembró la caña en el patio, dueño del Hogar, y ternura.</li>
+            <li> Nawal de las artes.</li>
+          </ul>
+          <p><strong>Significado Clave:</strong> La integridad de la fe</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Autoridad</li>
+            <li> Inteligente</li>
+            <li> Estricto</li>
+            <li> Es respetado por sus amigos</li>
+            <li> Principios sólidos en el terreno moral y ético</li>
+            <li> Atraído por la religión o los estudios filosóficos y teológicos</li>
+            <li> Trabajador</li>
+            <li> Bromista</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Regaña</li>
+            <li> Celoso</li>
+            <li> Nervioso</li>
+            <li> Expuesto  a discutir y  juzgar</li>
+            <li> Hace lo que le plazca</li>
+            <li> Extremista, no es de moderación</li>
+            <li> Hace bromas pesadas</li>
+            <li> No es constante en la fe</li>
+            <li> Variable</li>
+            <li> Sufre con frecuencia, se enferma en la niñez</li>
+            <li> Alcohólico</li>
+            <li> Destructor</li>
+            <li> Una vida variable, de dolor</li>
+            <li> tristeza y alegría</li>
+          </ul><p></p> <hr><h4 id="I" x'="">I'x</h4><h5>Significado</h5> <p>Jaguar</p><p></p><p>
+            <strong>Características:</strong>
+            Es el símbolo y energía de la Madre Tierra. Representa los lugares o centros ceremoniales donde se llevan a cabo las ceremonias.
+            Son los cerros, las montañas, las planicies. Significa Jaguar.
+          </p>
+          <p>
+            Representa el altar maya o sea el tab’al. Es un día especial para pedir la vida de los animales tanto domésticos como salvajes.
+            Se le pide a Ajaw una buena cosecha de cualquier cultivo, en especial el de las verduras.
+            En este día se encienden candelas de color verde, ya que simbolizan el color de la Madre Tierra.
+          </p>
+          <p>
+            Representa el altar maya o sea el tab’al. Es un día especial para pedir la vida de los animales tanto domésticos como salvajes.
+            Se le pide a Ajaw una buena cosecha de cualquier cultivo, en especial el de las verduras. En este día se encienden
+            candelas de color verde, ya que simbolizan el color de la Madre Tierra.
+          </p>
+          <p>
+            <strong>Función Espiritual:</strong>
+          </p>
+          <ul>
+            <li> Propicia energía espiritual y física.</li>
+            <li> Invocación por la lluvia.</li>
+            <li> Invocación por la vida de los animales.</li>
+            <li> Día de invocación por la salud de toda la humanidad.</li>
+            <li> Día para realizar invocaciones para que las siembras estén protegidas de los animales.</li>
+          </ul>
+          <p><strong>Su origen:</strong> Keme <strong>destino:</strong> Iq'</p>
+          <p>
+            <strong>Fortalezas:</strong>
+          </p>
+          <ul>
+            <li> Es paciente, fuerte, responsable, valiente, respetuoso, vigoroso y atrevido.</li>
+            <li> Es decisivo y realista.</li>
+            <li> Es de buen corazón.</li>
+            <li> Buen padre de familia.</li>
+            <li> Puede ser líder y famoso si sabe encauzar sus energías.</li>
+          </ul>
+          <p>
+            <strong>Debilidades:</strong>
+          </p>
+          <ul>
+            <li> Puede llegar a tener un carácter fuerte.</li>
+            <li> Algunas veces se enoja y se impacienta.</li>
+            <li> Su carácter le puede hacer prepotente, orgulloso, colérico, serio y vengativo.</li>
+          </ul><p></p> <hr>            </div>
+        
+                </div>
+            </section>
+            <h2>Energia</h2>
+            <p>
+                El calendario Cholq\'ij utiliza las energías del 1 al 13 pero su ciclo es de meses y días. <br><br>
+                La relación del 13 con los ciclos de la vida es múltiple, entre ellas se pueden mencionar:<br><br>
+                Las 13 energías en el nacimiento<br>
+                Los 13 ciclos de 20 días de un año Cholq\'ij.<br><br>
+                El 13 es una cantidad importante en el pensamiento maya. Se utiliza para indicar el nivel de energía y al combinar con el significado de los nawales construye la personalidad. Este número tiene influencia en toda la vida, marca la niñez, juventud, madurez y ancianidad.<br><br>
+            </p>
+            <section id="elementos">
+                <div class="container">
+                    <div class="row about-container">
+                        <div class="section-header">
+                            <h3 class="section-title">Elementos</h3>
+                        </div>
+                        <h4 id="Jun">Jun</h4><h5>Significado</h5> <p>El Todo, La Unidad, El Absoluto, La Pureza</p><p>Principio de Unidad.<br><span></span>Propósito, Atraer, Unificar.<br><span></span>El principio y origen, el ser humano como un todo.<br><span></span>La unidad establece el propósito, el objeto y la meta de acción por pequeña que esta sea.<br><span></span>La unidad es el todo, la única verdad absoluta, es la creación mental del todo.<br><span></span>En el circulo de la perfección todos los seres están unidos inseparablemente sin importar su dimensión de manifestación, la creencia de que no es así, crea una grieta en la relación original y esa grieta en el campo de energía crea una polaridad (como proceso de cicatrización) que ha de convertirse en vibración.</p> <hr><h4 id="Keb" '="">Keb'</h4><h5>Significado</h5> <p>La Pareja, La Polaridad, El Complemento, El Apoyo</p><p>Principio de Polaridad.<br><span></span>Desafió, Estabilizar, Polarizar.<br><span></span>Esqueleto y esencia, Masculino y femenino; forman el principio generador dual, la simetría dual de los seres. Son los extremos de un mismo fenómeno, opuestos idénticos en su naturaleza: espíritu y materia, luz y oscuridad, yin y yang.<br><span></span>Armonizar la vibración es resolver la polaridad equilibrando los dos extremos, o sea, incluyéndolos<br><span></span>Si todo es luz, las formas se difuminan, por eso es necesario el contraste de las sombras.<br><span></span>Cultivar nuestra resonancia es armonizar nuestra vibración con resonancias superiores como la planetaria, solar y galáctica.</p> <hr><h4 id="Oxib" '="">Oxib'</h4><h5>Significado</h5> <p>Los Resultados, Los Hijos, El Temor, Los Frutos</p><p>Principio del ritmo o compensación.<br><span></span>Servicio, Unir, Activar.<br><span></span>Flujo y reflujo, ascenso y descenso, acción y relación; es el movimiento entre los polos de todos los planos (físico, mental y espiritual).<br><span></span>Cada fenómeno, cada proceso tiene su propio ritmo: todo tiene un inicio, nace, crece, muere y renace. Liquido precioso que da calor y energía al cuerpo, sangre, el agua de la naturaleza, lluvia.<br><span></span>Al crear polaridades, desencadenamos eventos, circunstancias que experimentamos y superamos, las acciones que producen un campo de negatividad (ignorancia, oscuridad espiritual) son kharmas, las acciones que suprimen y corrigen la negatividad (sabiduría) son Dharmas y crean un campo benéfico.</p> <hr><h4 id="Kajib" '="">Kajib'</h4><h5>Significado</h5> <p>La Solidez, La Fortaleza, La Felicidad, La Estabilidad</p><p>Principio de la medida.<br><span></span>Forma, Medir, Definir.<br><span></span>El cuatro como medida de todas las estructuras materiales (la pirámide), entra siempre en relación con la composición trina de lo espiritual, formando la estructura Septernal de todo lo que Es.<br><span></span>El poder del ordenamiento matemático del macro y microcosmos. Todo cuanto existe es según la medida de la ley del todo.<br><span></span>Establece los limites de las estructuras; las 4 fuerzas principales, 4 rumbos sagrados, 4 elementos: calor, viento y agua sobre tierra. Cuatro son las regiones mayas, 4 los elementales, 4 los nucleótidos, 4 los elementos químicos primarios, 4 las razas cósmicas, rumbos cardinales, estaciones solares, chacras de personalidad, etc</p> <hr><h4 id="Job" '="">Job'</h4><h5>Significado</h5> <p>El Amor, El Trabajo, El Esfuerzo, Analizar</p><p>Principio de lo nuclear.<br><span></span>Esplendor, Mandar, Dar poder.<br><span></span>La capacidad de realización, la movilidad de los dedos, percibir la belleza de la naturaleza, el 5to. punto o centro del Universo.<br><span></span>Toda unidad, por pequeña que sea, objetiva o subjetiva comporta un núcleo como atractor y una periferia de manifestación (núcleo del átomo y electrones, por ejemplo).<br><span></span>Deriva la concepción del matiz cromático de cinco, que es la acción de la quinta fuerza galáctica; el matiz del color da la entonación.</p> <hr><h4 id="Waqib" '="">Waqib'</h4><h5>Significado</h5> <p>El Mundo Material, La Materia, La Amistad, La Reacción</p><p>Principio del equilibrio orgánico: 2x3. (Polaridad por ritmo)<br><span></span>Igualdad, Equilibrar, Organizo.<br><span></span>La polaridad del ritmo genera el principio orgánico, la ley del ordenamiento Hexagonal de las estructuras cristalinas y celulares. La tendencia de las estructuras ligadas al proceso de la vida es la de alcanzar el equilibrio relativo, estado de realización intermedio, a partir del cual continuar el movimiento hacia la conciencia superior.<br><span></span>El principio del Diferencial de Potencial aporta la resolución de situaciones a través de saltos cualitativos entre estados de la energía. Nada de cuanto sucede es casual, todo esta sujeto al poder de la ley primigenia; todo efecto tiene su causa y a la vez es causal de otros efectos, la Causa Centro Primera es el Creador.<br><span></span>Su acción es equilibrar, el principio de la integración de nuestra introspección</p> <hr><h4 id="Wuqub" '="">Wuqub'</h4><h5>Significado</h5> <p>El Equilibrio, El Movimiento, El Integrar, El Realizar</p><p>Principio de unificación mental. (Poder místico)<br><span></span>Armonización, Inspirar, Canalizo.<br><span></span>Los hombres somos unidades resonantes dentro de un todo Mental, el orden material es un fractal del ordenamiento mental del universo; nosotros no controlamos la mente, somos pensados por la mente, vivimos inmersos en ella.<br><span></span>El siete canaliza energía inspirando la armonización. Representa las fases lunares de 7 días, el segundo paso de la transformación interior; el intelecto activo, inquieto, la influencia lunar.</p> <hr><h4 id="Wajxaqib" '="">Wajxaqib'</h4><h5>Significado</h5> <p>La Espiritualidad, El Arte, La Alegría, La Energía Masculina</p><p>Principio de Resonancia armónica. (Octavas resonantes)<br><span></span>Integridad, Modelar, Armonizar.<br><span></span>Así como en música, las escalas se suceden en octavas, las energías vibratorias contactan y resuenan con sus respectivas equisonantes en los niveles superiores e inferiores de manifestación, como también con los armónicos secundarios derivados de la vibración.<br><span></span>Las octavas son el vehículo de información del todo, como ley de la armonía; el tono ocho otorga la habilidad de dar forma, de modelar, de describir aspectos del nivel inmediatamente superior de vibración.<br><span></span>Ocho es la esencia interior, el ser como recipiente de la esencia cósmica, el 2 veces NAHUI (4), conjuga las 4 direcciones (+) y los 4 rincones (X) del mundo.</p> <hr><h4 id="B" elejeb''="">B'elejeb'</h4><h5>Significado</h5> <p>La Realización, El Poder, Acción, La Energía Femenina</p><p>Principio de la Periodicidad cíclica.<br><span></span>Intención, Realizar, Pulso.<br><span></span>Todo cuanto se mueve lo hace de acuerdo a la Ley Cósmica; la periodicidad cíclica, no la repetición de los sucesos, es la cualidad por la que un evento se asocia a otros anteriores y posteriores en el tiempo como fenómenos resonantes (ciclos entre ciclos).<br><span></span>Representa lo femenino del principio generatriz (Yin), el polo creativo en el cual se manifiesta la generación o producción de formas, energías y conceptos nuevos dinamizadores del proceso evolutivo de la vida, el objetivo; la intención de poner la acción en movimiento</p> <hr><h4 id="Lajuj">Lajuj</h4><h5>Significado</h5> <p>La Ley, La Autoridad, La Rectitud, La Impecabilidad</p><p>Principio de la Manifestación.<br><span></span>Manifestar, Producir, Perfecciono.<br><span></span>El movimiento como energía se manifiesta en cada nivel u octava de vibración (dimensión); todo lo que se manifiesta, es decir, que cobra presencia (objetiva o subjetiva) se puede medir y viceversa.<br><span></span>La manifestación de la energía en todos los planos, implica vencer o enfrentar los obstáculos inherentes al plano dimensional y al tipo de presencia a manifestarse. Las manos juntas, la dualidad de las manos (5+5=10), equilibrándose mutuamente, como flecha al objetivo.</p> <hr><h4 id="Julajuj">Julajuj</h4><h5>Significado</h5> <p>Compartir, Separar, Las Posibilidades, Dejarse-abandonarse</p><p>Principio de las Estructuras disonantes.<br><span></span>Liberación, Divulgar, Disolver.<br><span></span>Todas las estructuras, cualquiera sea su naturaleza, tienden a ingresar a nuevas realidades; el movimiento perpetuo implica mutación y cambio constante, en la vida vamos haciendo conscientes estas nuevas realidades.<br><span></span>Las estructuras que se "desordenan" como un aparente caos para el mundo material, en realidad están ingresando a otro orden superior no comprensible desde la tridimensional. La grieta que nos escinde del todo es la no evolución, nuestra tendencia a quedarnos resguardados donde nos sentimos cómodos y seguros es un espejismo; un orden superior que hoy asimilamos como caos esta a la espera de nuestro ingreso, es la quinta dimensión que trasciende a las anteriores</p> <hr><h4 id="Kab" lajuj'="">Kab'lajuj</h4><h5>Significado</h5> <p>La Familia, La Comunidad, Los Grupos, La Seguridad</p><p>Principio de la Estabilidad compleja: 2x6.<br><span></span>Cooperación, Universalizar, Dedicación.<br><span></span>Es la polarización del equilibrio orgánico, mediante el cual cada especie gana su propio nivel de frecuencia armónica, es decir, su estatuto como especie: código, nicho, hábitat, etc. Genera las fuerzas conservacionistas de los organismos vivos, incluida la tierra, como cooperación simbiotica.</p> <hr><h4 id="Oxlajuj’">Oxlajuj’</h4><h5>Significado</h5> <p>La Magia, EL Poder del Camino, La Teurgia, El Trasmutar</p><p>Principio del movimiento universal o principio de vibración.<br><span></span>Presencia, Trascender, Perdurar.<br><span></span>Todo cuanto existe esta en perpetuo movimiento, desde lo mas sutil con las vibraciones, hasta lo mas denso y pesado como expresión de las bajas frecuencias, a tal punto que estos extremos parecen en reposo. <br><span></span>El movimiento es la energía que fluye desde la fuente y regresa a ella. Este principio otorga trascendencia a todo lo que funciona con y obedece a la ley del uno, trascendencia es la cualidad de perdurar mas allá del tiempo y del espacio. La unión total de todos los números anteriores, el ultimo numero representa el conocimiento interno, la introspección, centralidad y transparencia, Sabiduría del Universo, La Madre Tierra, respeto a lo que existe, florece y da frutos.</p> <hr>            </div>
+        
+                </div>
+            </section>
+        </div>
+</body>
+
+</html>
