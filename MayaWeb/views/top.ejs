@@ -12,13 +12,16 @@
 
 <body ontouchstart="">
     <%-include('encabezado')%>
-        <div class="container">
+    
+        <div class="container">            
             <div class="item">
                 <h2>Puntuaciones Trivia</h2>
+                <br>
                 <div id="metric_results"></div>
             </div>
             <div class="item">
                 <h2>Puntuaciones Matematica Maya</h2>
+                <br>
                 <div id="metric_results2"></div>
             </div>
         </div>
@@ -33,7 +36,7 @@
                 var table = document.createElement('TABLE')
                 var tableBody = document.createElement('TBODY')
 
-                table.border = '1'
+                table.border = '1';
                 table.appendChild(tableBody);
 
                 var heading = new Array();
@@ -45,7 +48,7 @@
                 //Crear filas
                 for (let i = 0; i < datos.length; i++) {
                     const element = datos[i];
-                    stock[i] = new Array(i, element.Usuario_nombre_usuario, element.puntuacion);
+                    stock[i] = new Array((i+1), element.Usuario_nombre_usuario, element.puntuacion);
                 }
 
                 //COLUMNAS DE LA TABLA
