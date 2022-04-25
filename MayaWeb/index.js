@@ -184,16 +184,16 @@ app.post('/matematica-maya-up-points', async (req, res) => {
 	if (req.session.loggedin) {
 		const nombre_juego = 'matematica maya';
 		//inserta si no esta
-		await connection.query('INSERT INTO usuario_juego SET ?', { Usuario_nombre_usuario: req.session.name, Juego_nombre_juego: nombre_juego, puntuacion: contPts}, async (error, results) => {
+		connection.query('INSERT INTO usuario_juego SET ?', { Usuario_nombre_usuario: req.session.name, Juego_nombre_juego: nombre_juego, puntuacion: contPts}, async (error, results) => {
 			if (error) {
 				// console.log(error.code);
-			await connection.query('SELECT puntuacion from usuario_juego WHERE Usuario_nombre_usuario=? and Juego_nombre_juego = ?', [req.session.name,nombre_juego], async (error, results, fields) => {
+			connection.query('SELECT puntuacion from usuario_juego WHERE Usuario_nombre_usuario=? and Juego_nombre_juego = ?', [req.session.name,nombre_juego], async (error, results, fields) => {
 					if (results.length != 0) {
 						puntuacionDB = results[0].puntuacion;
 						// console.log('punt db: ' + puntuacionDB);
 						if (contPts > puntuacionDB) {
 							//actualiza si esta
-						await connection.query('UPDATE usuario_juego SET puntuacion= ? WHERE Usuario_nombre_usuario= ? and Juego_nombre_juego = ?',[contPts,req.session.name,nombre_juego], async (error, results) => {
+						connection.query('UPDATE usuario_juego SET puntuacion= ? WHERE Usuario_nombre_usuario= ? and Juego_nombre_juego = ?',[contPts,req.session.name,nombre_juego], async (error, results) => {
 								if (error) {
 									console.log('error en update '+error);						
 								}
