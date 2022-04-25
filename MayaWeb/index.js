@@ -176,7 +176,7 @@ app.get('/matematica-maya', function (req, res) {
 	}
 });
 
-app.post('/matematica-maya-up-points',  (req, res) => {
+app.post('/matematica-maya-up-points', async (req, res) => {
 	const contPts = req.body.contPts;
 	let puntuacionDB = 0;
 	let supero_puntuacion = false;
@@ -184,43 +184,55 @@ app.post('/matematica-maya-up-points',  (req, res) => {
 	if (req.session.loggedin) {
 		const nombre_juego = 'matematica maya';
 		//inserta si no esta
-		connection.query('INSERT INTO usuario_juego SET ?', { Usuario_nombre_usuario: req.session.name, Juego_nombre_juego: nombre_juego, puntuacion: contPts}, async (error, results) => {
+		await connection.query('INSERT INTO usuario_juego SET ?', { Usuario_nombre_usuario: req.session.name, Juego_nombre_juego: nombre_juego, puntuacion: contPts}, async (error, results) => {
 			if (error) {
 				// console.log(error.code);
-				connection.query('SELECT puntuacion from usuario_juego WHERE Usuario_nombre_usuario=? and Juego_nombre_juego = ?', [req.session.name,nombre_juego], async (error, results, fields) => {
+			await connection.query('SELECT puntuacion from usuario_juego WHERE Usuario_nombre_usuario=? and Juego_nombre_juego = ?', [req.session.name,nombre_juego], async (error, results, fields) => {
 					if (results.length != 0) {
 						puntuacionDB = results[0].puntuacion;
 						// console.log('punt db: ' + puntuacionDB);
 						if (contPts > puntuacionDB) {
 							//actualiza si esta
-							connection.query('UPDATE usuario_juego SET puntuacion= ? WHERE Usuario_nombre_usuario= ? and Juego_nombre_juego = ?',[contPts,req.session.name,nombre_juego], async (error, results) => {
+						await connection.query('UPDATE usuario_juego SET puntuacion= ? WHERE Usuario_nombre_usuario= ? and Juego_nombre_juego = ?',[contPts,req.session.name,nombre_juego], async (error, results) => {
 								if (error) {
 									console.log('error en update '+error);						
 								}
 								else{
 									supero_puntuacion = true;
 									console.log('dato actualizado');
+									res.json({
+										status: 'success',
+										supero_puntuacion: supero_puntuacion,
+										pointsAnt: puntuacionDB,
+										pointsNew: contPts
+									});
+									res.end();
 								}
 							})
 						}else{
 							console.log('puntuacion actual menor a la db')
+							responseMateMaya(res);
 						}
 					}
 				});	
 			}else{
 				console.log('dato insertado')
+				responseMateMaya(res);
 			}
 		});
+	}else{
+		responseMateMaya(res);
 	}
+	
+})
+
+function responseMateMaya (res) {
 	res.json({
 		status: 'success',
-		supero_puntuacion: supero_puntuacion,
-		pointsAnt: puntuacionDB,
-		pointsNew: contPts
+		supero_puntuacion: false
 	});
 	res.end();
-
-})
+}
 
 app.listen(3000, (req, res) => {
 	console.log('SERVER RUNNING IN http://localhost:3000');
