@@ -25,11 +25,11 @@ const connection = require('./utils/db');
 
 /*---RUTAS---*/
 app.get('/login', (req, res) => {
-    res.render('login');
+    res.render('login', {'name': req.session.name });
 });
 
 app.get('/register', (req, res) => {
-    res.render('register');
+    res.render('register', {'name': req.session.name });
 });
 
 app.get('/calendarioHaab', (req, res) => {
@@ -41,13 +41,13 @@ app.get('/calendarioHaab', (req, res) => {
             //JSON.stringify()
             //obj = {informacion: result};
             obj = JSON.stringify(result);
-            res.render('calendarioHaab', { 'informacion': result });
+            res.render('calendarioHaab', { 'informacion': result,'name': req.session.name });
         }
     });
 });
 
 app.get('/trivia', (req, res) => {
-    let queryCons = 'SELECT * FROM Calendario_rueda WHERE nombre_calendario_rueda = \'Haab\'';
+    let queryCons = 'SELECT * FROM Pregunta ORDER BY RAND() LIMIT 10';
     connection.query(queryCons, function(err, result) {
         if (err) {
             throw err;
@@ -55,7 +55,7 @@ app.get('/trivia', (req, res) => {
             //JSON.stringify()
             //obj = {informacion: result};
             obj = JSON.stringify(result);
-            res.render('trivia', { 'informacion': result });
+            res.render('trivia', { 'informacion': result,'name': req.session.name });
         }
     });
 });
@@ -67,7 +67,7 @@ app.get('/ruedaCalendarica', (req, res) => {
             throw err;
         } else {
             obj = JSON.stringify(result);
-            res.render('ruedaCalendarica', { 'informacion': result });
+            res.render('ruedaCalendarica', { 'informacion': result,'name': req.session.name });
         }
     });
 });
@@ -79,7 +79,7 @@ app.get('/calculadora', (req, res) => {
             throw err;
         } else {
             obj = JSON.stringify(result);
-            res.render('calculadora', { 'informacion': result });
+            res.render('calculadora', { 'informacion': result,'name': req.session.name });
         }
     });
 });
@@ -198,16 +198,16 @@ app.post('/matematica-maya-up-points', (req, res) => {
     if (req.session.loggedin) {
         const nombre_juego = 'matematica maya';
         //inserta si no esta
-        connection.query('INSERT INTO usuario_juego SET ?', { Usuario_nombre_usuario: req.session.name, Juego_nombre_juego: nombre_juego, puntuacion: contPts }, async(error, results) => {
+        connection.query('INSERT INTO Usuario_Juego SET ?', { Usuario_nombre_usuario: req.session.name, Juego_nombre_juego: nombre_juego, puntuacion: contPts }, async(error, results) => {
             if (error) {
                 // console.log(error.code);
-                connection.query('SELECT puntuacion from usuario_juego WHERE Usuario_nombre_usuario=? and Juego_nombre_juego = ?', [req.session.name, nombre_juego], async(error, results, fields) => {
+                connection.query('SELECT puntuacion from Usuario_Juego WHERE Usuario_nombre_usuario=? and Juego_nombre_juego = ?', [req.session.name, nombre_juego], async(error, results, fields) => {
                     if (results.length != 0) {
                         puntuacionDB = results[0].puntuacion;
                         // console.log('punt db: ' + puntuacionDB);
                         if (contPts > puntuacionDB) {
                             //actualiza si esta
-                            connection.query('UPDATE usuario_juego SET puntuacion= ? WHERE Usuario_nombre_usuario= ? and Juego_nombre_juego = ?', [contPts, req.session.name, nombre_juego], async(error, results) => {
+                            connection.query('UPDATE Usuario_Juego SET puntuacion= ? WHERE Usuario_nombre_usuario= ? and Juego_nombre_juego = ?', [contPts, req.session.name, nombre_juego], async(error, results) => {
                                 if (error) {
                                     console.log('error en update ' + error);
                                 } else {
@@ -233,7 +233,53 @@ app.post('/matematica-maya-up-points', (req, res) => {
     });
     res.end();
 
-})
+});
+
+app.post('/trivia-maya-up-points', (req, res) => {
+    const contPts = req.body.contPts;
+    let puntuacionDB = 0;
+    let supero_puntuacion = false;
+    //realizar la subida
+    if (req.session.loggedin) {
+        const nombre_juego = 'trivia';
+        //inserta si no esta
+        connection.query('INSERT INTO Usuario_Juego SET ?', { Usuario_nombre_usuario: req.session.name, Juego_nombre_juego: nombre_juego, puntuacion: contPts }, async(error, results) => {
+            if (error) {
+				console.log("El El error de algo");
+                console.log(error);				
+                connection.query('SELECT puntuacion from Usuario_Juego WHERE Usuario_nombre_usuario=? and Juego_nombre_juego = ?', [req.session.name, nombre_juego], async(error, results, fields) => {
+                    if (results.length != 0) {
+                        puntuacionDB = results[0].puntuacion;
+                        // console.log('punt db: ' + puntuacionDB);
+                        if (contPts > puntuacionDB) {
+                            //actualiza si esta
+                            connection.query('UPDATE Usuario_Juego SET puntuacion= ? WHERE Usuario_nombre_usuario= ? and Juego_nombre_juego = ?', [contPts, req.session.name, nombre_juego], async(error, results) => {
+                                if (error) {
+                                    console.log('error en update ' + error);
+                                } else {
+                                    supero_puntuacion = true;
+                                    console.log('dato actualizado');
+                                }
+                            })
+                        } else {
+                            console.log('puntuacion actual menor a la db')
+                        }
+                    }
+                });
+            } else {
+                console.log('dato insertado')
+            }
+        });
+    }
+    res.json({
+        status: 'success',
+        supero_puntuacion: supero_puntuacion,
+        pointsAnt: puntuacionDB,
+        pointsNew: contPts
+    });
+    res.end();
+
+});
 
 app.listen(3000, (req, res) => {
     console.log('SERVER RUNNING IN http://localhost:3000');

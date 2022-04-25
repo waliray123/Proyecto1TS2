@@ -31,6 +31,7 @@ function buttonPress(answerRecivied) {
 
 
 //Preguntas en array
+/*
 var allQuestions = [{
     question: 'El calendario solar maya es llamado Haab ¿Que significa la palabra “haab”?',
     choices: ["Año", "Sol", "Calendario", "Calendario del sol"],
@@ -56,7 +57,7 @@ var allQuestions = [{
     answer: 2,
     comment: "La semilla o concha simboliza el 0"
 }];
-
+*/
 //Mensajes finales
 var result = [{
     image: "/resources/images/trivia/final0.png",
@@ -106,12 +107,22 @@ function question(questionNum) {
 };
 
 //Terminar el proceso de trivia
-function end() {
+async function end() {
     finalImage();
     $("#asnwers-container").hide();
     $("h2").text("Tu puntacion es " + totalCorrect + " de " + allQuestions.length + ". " + result[optionFinal].comment);
     $("#image").html('<img src=' + result[optionFinal].image + ' class="question-image-final "alt="">').fadeIn(1000);
     $("#try-again-container").show();
+    let contPts = totalPoints;
+    const data = {contPts};
+        const options = {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {'Content-Type': 'application/json'}            
+        }
+        const response = await fetch('/trivia-maya-up-points',options)
+        const json_res = await response.json();
+        console.log(json_res);
     restart();
 };
 

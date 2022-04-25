@@ -1270,9 +1270,28 @@ El movimiento es la energía que fluye desde la fuente y regresa a ella. Este pr
 
 /*---Juegos---*/
 
-INSERT INTO juego (nombre_juego,descripcion,reglas)
+INSERT INTO Juego (nombre_juego,descripcion,reglas)
 VALUES ( 'matematica maya',
 'El juego consiste en que se dan dos numeros mayas del 0 al 9 y el jugador tiene que sumarlos y dar la respuesta en nuemros en formarto decimal',
 'por cada suma hecha se da 1 punto, si falla, el juego termina y se reinicia la puntuacion'
 );
+
+INSERT INTO Juego (nombre_juego,descripcion,reglas)
+VALUES ( 'trivia',
+'Es una trivia aprenda',
+'Contesta las preguntas correctamente bye '
+);
+
+/*---Preguntas---*/
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( 'El calendario solar maya es llamado Haab ¿Que significa la palabra \"haab\"?',
+'/resources/images/trivia/questions/haab.jpg',
+0,
+'Haab significa Año en el lenguaje maya',
+'Año',
+'Sol',
+'Calendario',
+'Calendario del sol'
+);
+
 
