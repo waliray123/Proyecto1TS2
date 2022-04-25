@@ -101,7 +101,8 @@ app.post('/register', async(req, res) => {
                 alertIcon: 'success',
                 showConfirmButton: false,
                 timer: 1500,
-                ruta: ''
+                ruta: '',
+				'name': req.session.name
             });
             //res.redirect('/');         
         }
@@ -122,7 +123,8 @@ app.post('/auth', async(req, res) => {
                     alertIcon: 'error',
                     showConfirmButton: true,
                     timer: false,
-                    ruta: 'login'
+                    ruta: 'login',
+					'name': req.session.name
                 });
 
                 //Mensaje simple y poco vistoso
@@ -138,7 +140,8 @@ app.post('/auth', async(req, res) => {
                     alertIcon: 'success',
                     showConfirmButton: false,
                     timer: 1500,
-                    ruta: ''
+                    ruta: '',
+					'name': req.session.name
                 });
             }
             res.end();
@@ -153,12 +156,12 @@ app.get('/', (req, res) => {
     if (req.session.loggedin) {
         res.render('index', {
             login: true,
-            name: req.session.name
+            'name': req.session.name
         });
     } else {
         res.render('index', {
             login: false,
-            name: 'Debe iniciar sesión',
+            'name': 'Debe iniciar sesión',
         });
     }
     res.end();
@@ -180,12 +183,12 @@ app.get('/matematica-maya', function(req, res) {
     if (req.session.loggedin) {
         res.render('matematicaMaya', {
             login: true,
-            name: 'Nombre de usuario: ' + req.session.name
+            'name': 'Nombre de usuario: ' + req.session.name
         });
     } else {
         res.render('matematicaMaya', {
             login: false,
-            name: 'Debe iniciar sesión para guardar los puntos',
+            'name': 'Debe iniciar sesión para guardar los puntos',
         });
     }
 });
