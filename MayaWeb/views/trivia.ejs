@@ -12,25 +12,6 @@
 
 <body ontouchstart="">
 
-    <script type='text/javascript'>
-        var datos =<%-JSON.stringify(informacion) %>;
-
-        //document.getElementById('informacion').innerText += inf;
-        //console.log(datos);
-        var allQuestions = [];
-        for (let i = 0; i <= 2; i++) {
-            let pregunta = datos[i];            
-            let agregacion = {
-                question: pregunta.question,
-                choices: [pregunta.opcion1, pregunta.opcion2,pregunta.opcion3,pregunta.opcion4],
-                image: pregunta.rutaImagen,
-                answer: pregunta.numRespuesta,
-                comment: pregunta.comentario
-            };                 
-            allQuestions.push(agregacion);            
-        }
-        console.log(allQuestions);
-    </script>
 
     <%-include('encabezado')%>
         <!-- Elements on the left -->
@@ -46,7 +27,7 @@
                 <img class="avatar" src="resources/images/trivia/user.jpg" />
                 <div class="labels-container">
                     <div class="username-container">
-                        <%-name%>                                                
+                        <%-name%>
                     </div>
                     <div id="points" class="points-container">
                         0 pts
@@ -72,8 +53,7 @@
             <!-- Question image -->
             <div class="image-container">
                 <p id="image" class="image"></p>
-                <p id="text1">Aqui podras poner a prueba tus conocimientos acerca de la matemática maya, el calendario
-                    Cholq'ij (lunar) y calendario Haab (solar).
+                <p id="text1">Aqui podras poner a prueba tus conocimientos acerca de la matemática maya, el calendario Cholq'ij (lunar) y calendario Haab (solar).
                 </p><br><br>
                 <p id="text2">¡Si estas listo presiona empezar!</p>
                 <button id="start-button" class="submit-answer" onclick="ready()">Empezar</button>
@@ -95,6 +75,22 @@
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="resources/js/scriptTrivia.js"></script>
+        <script type='text/javascript'>
+            var datos = <%-JSON.stringify(informacion) %>;
+            var allQuestions = [];
+            for (let i = 0; i <= 8; i++) {
+                let pregunta = datos[i];
+                let agregacion = {
+                    question: pregunta.question,
+                    choices: [pregunta.opcion1, pregunta.opcion2, pregunta.opcion3, pregunta.opcion4],
+                    image: pregunta.rutaImagen,
+                    answer: pregunta.numRespuesta,
+                    comment: pregunta.comentario
+                };
+                allQuestions.push(agregacion);
+            }
+            console.log(allQuestions);
+        </script>
 </body>
 
 </html>

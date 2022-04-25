@@ -1,6 +1,6 @@
 body {
-    background: #1f1f1f;
-    font-family: "Roboto", sans-serif;    
+    background: #1c1f24;
+    font-family: "Roboto", sans-serif;
     color: #fff;
 }
 
@@ -12,108 +12,157 @@ body {
 }
 
 nav ul>li:nth-of-type(5) {
-    background-color: #222
+    background-color: #2a2c38;
+    border-bottom: 2px solid #14c98f;
 }
 
 nav ul>li:first-of-type {
-    background-color: #333d29;
+    border-bottom: 2px solid #2a2c38;
 }
 
-.game-inicio , #game{
+.game-inicio,
+#game {
     display: grid;
     gap: 10px;
     padding: 10px;
     grid-template-columns: auto auto;
-    background: #252525;
+    background: #2a2c38;
     height: 100%;
     width: 100%;
 }
 
-.simbolos{
+.simbolos {
     /* background: rgb(59, 95, 51); */
     align-items: center;
     text-align: center;
 }
 
-.simbolos .simbolo{
+.simbolos .simbolo {
     padding: 2.5em;
 }
 
-.general-simbolo{
+.general-simbolo {
     /* background: rgb(67, 139, 53); */
     align-items: center;
     text-align: center;
+    width: 90%;
+    height: 100%;
 }
 
-.btn-init{
+.general-simbolo img {
+    margin-top: 5%;
+}
+
+.btn-init {
     grid-column: 1 / 3;
     align-items: center;
     text-align: center;
+    width: 65%;
+    margin-left: 20%;
     /* background:rgb(31, 69, 22); */
     /* padding: 10px; */
 }
 
-.btn-init > button{
+.btn-init>button {
     /* padding: 1em; */
     font-size: 1.6em;
-    border-radius: 5px;    
+    border-radius: 5px;
     transition-duration: 0.7s;
     color: rgb(255, 255, 255);
-    background-color: #333d29;
     width: 220px;
     height: 60px;
+    background-color: #00000000;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
 }
 
-.btn-init > button:hover {
+.btn-init>button:hover {
     cursor: pointer;
+    background-color: #15c28b;
     transform: translateX(5px) translateY(-7px);
-  }
+}
+
+.btn-init2 {
+    grid-column: 1 / 3;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    /* background:rgb(31, 69, 22); */
+    /* padding: 10px; */
+}
+
+.btn-init2>button {
+    /* padding: 1em; */
+    font-size: 1.6em;
+    border-radius: 5px;
+    transition-duration: 0.7s;
+    color: rgb(255, 255, 255);
+    width: 220px;
+    height: 60px;
+    background-color: #00000000;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
+}
+
+.btn-init2>button:hover {
+    cursor: pointer;
+    background-color: #15c28b;
+    transform: translateX(5px) translateY(-7px);
+}
+
 
 /*Para la suma maya*/
 
-#game{
+#game {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#game{
+#game {
     display: none;
 }
 
-#game h1{
+#game h1 {
     font-size: 2em;
     text-transform: uppercase;
     padding-bottom: 30px;
     text-shadow: 1px 1px 2px white;
     animation: zooms 1s linear infinite;
     animation-direction: alternate;
-
+    border-bottom: 10px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
+    height: 60px;
 }
 
 @keyframes zooms {
-    from { transform: translate(-20px);}
-    to { transform: translate(20px);}
+    from {
+        transform: translate(-20px);
+    }
+    to {
+        transform: translate(20px);
+    }
 }
 
-.centerdiv{
-    width: 500px;
-    height: 300px;
+.centerdiv {
+    width: 700px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #324353;
+    background-color: #1c1f24;
+    margin-left: 35%;
 }
 
-.insertbox{
+.insertbox {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-
 }
+
 
 /* #number1, #number2 {
     text-align: center;
@@ -125,13 +174,13 @@ nav ul>li:first-of-type {
                 3px 3px 0px #999;
 } */
 
-.box1 p{
+.box1 p {
     font-size: 4em;
     margin: 0 0.6em -0.1em;
     color: #bebebe;
 }
 
-.middlebox #answ{
+.middlebox #answ {
     margin: 30px 0;
     padding: 5px 0;
     font-size: 1.9em;
@@ -139,3 +188,40 @@ nav ul>li:first-of-type {
     width: 6.5em;
 }
 
+.timer-container {
+    width: 90%;
+    height: 65%;
+    margin-left: 6%;
+    margin-top: 36%;
+    padding-top: 3%;
+    background-color: #1c1f24;
+}
+
+.timer-container p {
+    color: white;
+    margin-top: 3%;
+    font-size: 17px;
+}
+
+.timer-title {
+    color: #fff;
+    font-size: 27px;
+}
+
+.icon {
+    width: 200px;
+    height: 230px;
+}
+
+.split-left {
+    height: 85%;
+    width: 32%;
+    position: fixed;
+    z-index: 1;
+    top: 8%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    left: 0%;
+    background-color: #00000000;
+    margin-left: 5%;
+}

@@ -1,7 +1,7 @@
-(function ($) {
+(function($) {
 
     Drupal.behaviors.mayatime = {
-        attach: function (context, settings) {
+        attach: function(context, settings) {
 
             (jQuery)('.glossary-tip', context).qtip({
                 position: {
@@ -35,7 +35,7 @@
 
             convertDate();
 
-            (jQuery)('#convert').click(function () {
+            (jQuery)('#convert').click(function() {
                 convertDate();
             });
 
@@ -96,7 +96,7 @@ function validateDate(m, d, y) {
 
 
 function convertDate() {
-    
+
     valorFecha = (jQuery)('#date-calc').val();
     //Separar fecha
     valoresFecha = valorFecha.split('-');
@@ -104,7 +104,7 @@ function convertDate() {
     d = valoresFecha[2];
     y = valoresFecha[0];
 
-    m = parseInt(m)-1;
+    m = parseInt(m) - 1;
     d = parseInt(d);
     y = parseInt(y);
 
@@ -125,7 +125,7 @@ function convertDate() {
 
     var longCount = toLCD(toJDN(m, d, y));
     lcd_string = "";
-    (jQuery).each(longCount, function (i, el) {
+    (jQuery).each(longCount, function(i, el) {
         //for long count, iterate through array. numbers will be in correct order to determine glyph
         (jQuery)('.calendar-glyph[rel="' + i + '"]').find('div.numeral').css('background-image', 'url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/numerals/' + el + '.png)');
         lcd_string += (i < 4) ? el + "." : el;

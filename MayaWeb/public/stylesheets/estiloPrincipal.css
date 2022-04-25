@@ -11,6 +11,11 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+nav ul>li:nth-of-type(1) {
+    background-color: #2a2c38;
+    border-bottom: 2px solid #14c98f;
+}
+
 .cont {
     position: relative;
     overflow: hidden;
@@ -133,7 +138,19 @@ body {
 .el__heading {
     color: #fff;
     text-transform: uppercase;
+    text-shadow: 4px 2px 9px #000000;
+    background-color: #1f2227;
     font-size: 18px;
+    border: 5px solid #1f2227;
+}
+
+.el__heading:hover {
+    color: #14c98f;
+    text-transform: uppercase;
+    text-shadow: 4px 2px 9px #000000;
+    background-color: #1f2227;
+    font-size: 18px;
+    border: 5px solid #1f2227;
 }
 
 .el__content {
@@ -160,13 +177,17 @@ body {
 .el__text {
     /*text-transform: uppercase;*/
     font-size: 40px;
-    color: #fff;
+    color: #14c98f;
+    background-color: #1f2227;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
 }
 
 .el__text2 {
     line-height: 200%;
     font-size: 35px;
     color: #fff;
+    text-shadow: 4px 2px 9px #000000;
 }
 
 .el__close-btn {
@@ -313,7 +334,7 @@ body {
     transition-delay: 0s;
 }
 
-.el:nth-child(1) .el__bg {
+.el:nth-child(1) .button {
     transform: translate3d(0%, 0, 0);
 }
 
@@ -367,7 +388,7 @@ body {
 
 .el:nth-child(3) .el__bg:before {
     transition-delay: 0.2s;
-    background-image: url("/resources/images/imgPrincipal/seccion3.png");
+    background-image: url("/resources/images/imgPrincipal/seccion3.jpg");
 }
 
 .el:nth-child(4) {
@@ -457,9 +478,6 @@ body {
 }
 
 a.button {
-    background-color: #333d29;
-    /* Green */
-    border: none;
     color: white;
     padding: 16px 32px;
     text-align: center;
@@ -470,9 +488,12 @@ a.button {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 12px;
+    background-color: #222;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
 }
 
 a.button:hover {
-    background-color: #222;
+    background-color: #14c98f;
     color: white;
 }

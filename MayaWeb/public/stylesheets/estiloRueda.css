@@ -1,119 +1,150 @@
 @import url(https://fonts.googleapis.com/css?family=Signika+Negative:400,700);
-
-html, body {
-  height:100%;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
+html,
+body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
 }
 
 html {
-  background: url('/resources/images/imgPrincipal/seccion3.png') fixed;
-  background-size: 100%;
+    background-image: url('/resources/images/imgPrincipal/seccion3.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-color: #1c1f24;
+}
+
+nav ul>li:nth-of-type(4) {
+    background-color: #2a2c38;
+    border-bottom: 2px solid #14c98f;
 }
 
 div {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 a {
-  color: #322bff;
-  text-decoration: underline;
-  transition: 500ms;
+    color: #322bff;
+    text-decoration: underline;
+    transition: 500ms;
 }
+
 a:hover {
-  color: #26a1ff;
+    color: #26a1ff;
 }
 
 p {
-  padding: 0 5%;
+    padding: 0 5%;
 }
 
 img {
-  box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px #000;
 }
 
 #header {
-  background: rgba(255, 255, 255, .5);
-  padding: 1%;
-  overflow: hidden;
-  height: 55px;
+    background: rgba(255, 255, 255, .5);
+    padding: 1%;
+    overflow: hidden;
+    height: 55px;
 }
+
 #header img {
-  float: left;
-  box-shadow: none;
+    float: left;
+    box-shadow: none;
 }
+
 #header ul {
-  list-style: none;
-  float: left;
-  padding-left: 10px;
-  margin-top: 15px;
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+    margin-top: 15px;
 }
+
 #header ul li {
-  float: left;
-  margin-left: 10px;
-  font-size: 20px;
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .fullscreen {
-  height: 93%;
-  position: relative;
+    height: 93%;
+    position: relative;
 }
+
 .fullscreen .header {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  color: #132a13;
-  text-shadow: 0px 0px 2px #000;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0px 0px 2px #000;
 }
 
 .white {
-  background: #eeeeec;
-  padding: 0 5%;
+    background: #2a2c38;
+    padding: 0 5%;
+    color: #fff;
 }
+
+.white h1 {
+    color: #14c98f;
+}
+
 .nobg {
-  background: none;
-  padding: 0 5%;
-  color: #fff;
-  text-shadow: 0px 0px 4px #000;
+    background: none;
+    padding: 0 5%;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
 }
+
 .semitrans {
-  background: rgba(255, 255, 255, .5);
-  padding: 0 5%;
+    background: #2a2c3893;
+    padding: 0 5%;
+    color: #fff;
 }
+
+.semitrans h1,
+h2 {
+    color: #14c98f;
+}
+
 .dark {
-  color: #eeeeec;
-  background: #010105;
-  padding: 0 5%;
+    color: #eeeeec;
+    background: #010105;
+    padding: 0 5%;
 }
 
 .nopadding {
-  padding: 0;
+    padding: 0;
 }
 
 .floatleft {
-  float: left;
-  margin: 2%;
+    float: left;
+    margin: 2%;
 }
+
 .floatright {
-  float: right;
-  margin: 2%;
+    float: right;
+    margin: 2%;
 }
 
 .more {
-  text-align: center;
-  font-size: 17px;
-}
-.more a {
-  color: #aaa;
-  text-decoration: none;
-  cursor: pointer;
-}
-.more a:hover {
-  color: #777;
+    text-align: center;
+    font-size: 17px;
 }
 
-.redondo{
-  border-radius: 50%;
-  width:100px
+.more a {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.more a:hover {
+    color: #777;
+}
+
+.redondo {
+    border-radius: 50%;
+    width: 100px
 }

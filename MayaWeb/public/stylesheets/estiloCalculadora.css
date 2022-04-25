@@ -1,11 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Signika+Negative:400,700);
-
-.centrar{
+.centrar {
     display: flex;
     justify-content: center;
 }
 
-#colorbox, #cboxOverlay, #cboxWrapper {
+#colorbox,
+#cboxOverlay,
+#cboxWrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,7 +24,8 @@
     height: 100%;
 }
 
-#cboxMiddleLeft, #cboxBottomLeft {
+#cboxMiddleLeft,
+#cboxBottomLeft {
     clear: left;
 }
 
@@ -40,7 +42,8 @@
     margin: 0;
 }
 
-#cboxLoadingOverlay, #cboxLoadingGraphic {
+#cboxLoadingOverlay,
+#cboxLoadingGraphic {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,7 +51,10 @@
     height: 100%;
 }
 
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+#cboxPrevious,
+#cboxNext,
+#cboxClose,
+#cboxSlideshow {
     cursor: pointer;
 }
 
@@ -70,7 +76,9 @@
     margin: 0;
 }
 
-#colorbox, #cboxContent, #cboxLoadedContent {
+#colorbox,
+#cboxContent,
+#cboxLoadedContent {
     box-sizing: content-box;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
@@ -81,7 +89,6 @@
     opacity: 0.9;
     filter: alpha(opacity=90);
 }
-
 
 .cboxIframe {
     background: #fff;
@@ -122,7 +129,10 @@
     color: #7C7C7C;
 }
 
-#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+#cboxPrevious,
+#cboxNext,
+#cboxSlideshow,
+#cboxClose {
     border: 0;
     padding: 0;
     margin: 0;
@@ -135,7 +145,10 @@
     text-indent: -9999px;
 }
 
-#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
+#cboxPrevious:active,
+#cboxNext:active,
+#cboxSlideshow:active,
+#cboxClose:active {
     outline: 0;
 }
 
@@ -196,7 +209,10 @@
     padding: 1em;
 }
 
-a.ctools-ajaxing, input.ctools-ajaxing, button.ctools-ajaxing, select.ctools-ajaxing {
+a.ctools-ajaxing,
+input.ctools-ajaxing,
+button.ctools-ajaxing,
+select.ctools-ajaxing {
     padding-right: 18px !important;
     background: url(/sites/all/modules/ctools/images/status-active.gif) right center no-repeat;
 }
@@ -212,7 +228,9 @@ div.ctools-ajaxing {
     text-decoration: line-through;
 }
 
-#locale-translation-filter-form .form-item-language, #locale-translation-filter-form .form-item-translation, #locale-translation-filter-form .form-item-group {
+#locale-translation-filter-form .form-item-language,
+#locale-translation-filter-form .form-item-translation,
+#locale-translation-filter-form .form-item-group {
     float: left;
     padding-right: .8em;
     margin: 0.1em;
@@ -236,7 +254,8 @@ div.ctools-ajaxing {
     color: #000000;
 }
 
-.ui-tooltip, .qtip {
+.ui-tooltip,
+.qtip {
     position: absolute;
     left: -28000px;
     top: -28000px;
@@ -293,12 +312,14 @@ div.ctools-ajaxing {
     top: 16px;
 }
 
-.ui-tooltip-titlebar .ui-icon, .ui-tooltip-icon .ui-icon {
+.ui-tooltip-titlebar .ui-icon,
+.ui-tooltip-icon .ui-icon {
     display: block;
     text-indent: -1000em;
 }
 
-.ui-tooltip-icon, .ui-tooltip-icon .ui-icon {
+.ui-tooltip-icon,
+.ui-tooltip-icon .ui-icon {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -341,7 +362,8 @@ div.ctools-ajaxing {
     z-index: 10;
 }
 
-.ui-tooltip .ui-tooltip-tip, .ui-tooltip .ui-tooltip-tip * {
+.ui-tooltip .ui-tooltip-tip,
+.ui-tooltip .ui-tooltip-tip * {
     position: absolute;
     line-height: .1px !important;
     font-size: .1px !important;
@@ -361,7 +383,9 @@ div.ctools-ajaxing {
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
-.ui-tooltip-rounded, .ui-tooltip-tipsy, .ui-tooltip-bootstrap {
+.ui-tooltip-rounded,
+.ui-tooltip-tipsy,
+.ui-tooltip-bootstrap {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -393,7 +417,7 @@ div.ctools-ajaxing {
 .ui-tooltip-youtube .ui-tooltip-content {
     padding: .75em;
     font: 12px arial, sans-serif;
-    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#4a4a4a, EndColorStr=#000000);
+    filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#4a4a4a, EndColorStr=#000000);
     -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#4a4a4a,EndColorStr=#000000);";
 }
 
@@ -422,16 +446,17 @@ div.ctools-ajaxing {
 
 .ui-tooltip-jtools .ui-tooltip-titlebar {
     background-color: transparent;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171, endColorstr=#4A4A4A);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#717171, endColorstr=#4A4A4A);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#717171,endColorstr=#4A4A4A)";
 }
 
 .ui-tooltip-jtools .ui-tooltip-content {
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A, endColorstr=#232323);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A, endColorstr=#232323);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4A4A4A,endColorstr=#232323)";
 }
 
-.ui-tooltip-jtools .ui-tooltip-titlebar, .ui-tooltip-jtools .ui-tooltip-content {
+.ui-tooltip-jtools .ui-tooltip-titlebar,
+.ui-tooltip-jtools .ui-tooltip-content {
     background: transparent;
     color: white;
     border: 0 dashed transparent;
@@ -516,7 +541,7 @@ div.ctools-ajaxing {
     background: #3A79B8;
     background-image: -moz-linear-gradient(top, #3A79B8, #2E629D);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#3A79B8), to(#2E629D));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8, endColorstr=#2E629D);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8, endColorstr=#2E629D);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#3A79B8,endColorstr=#2E629D)";
 }
 
@@ -588,7 +613,8 @@ div.ctools-ajaxing {
     filter: alpha(opacity=40);
 }
 
-.ui-tooltip:not(.ie9haxors) div.ui-tooltip-content, .ui-tooltip:not(.ie9haxors) div.ui-tooltip-titlebar {
+.ui-tooltip:not(.ie9haxors) div.ui-tooltip-content,
+.ui-tooltip:not(.ie9haxors) div.ui-tooltip-titlebar {
     filter: none;
     -ms-filter: none;
 }
@@ -600,7 +626,8 @@ div.ctools-ajaxing {
     margin-right: 10px;
 }
 
-#calendar-converter-intro p, #calendar-converter-intro-top {
+#calendar-converter-intro p,
+#calendar-converter-intro-top {
     margin-bottom: 20px;
 }
 
@@ -618,7 +645,7 @@ div.ctools-ajaxing {
     float: left;
     display: inline;
     width: 620px;
-    background-color: #c2c5aa;
+    background-color: #2a2c38;
     border-radius: 25px;
 }
 
@@ -642,8 +669,8 @@ div.ctools-ajaxing {
 }
 
 #converter-wrap {
-    margin-top: 35px;    
-    margin-bottom: 35px;    
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 p#calendar-quote {
@@ -652,7 +679,8 @@ p#calendar-quote {
     margin-left: 60px;
 }
 
-div#monument, #conveter-main {
+div#monument,
+#conveter-main {
     width: 315px;
 }
 
@@ -706,23 +734,23 @@ div#monument div.calendar-glyph div.numeral {
 }
 
 #baktuns {
-    background-image: url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/long/long0.png);
+    background-image: url(/resources/images/calculadora/1.png);
 }
 
 #katuns {
-    background-image: url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/long/long1.png);
+    background-image: url(/resources/images/calculadora/2.png);
 }
 
 #tuns {
-    background-image: url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/long/long2.png);
+    background-image: url(/resources/images/calculadora/3.png);
 }
 
 #uinals {
-    background-image: url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/long/long3.png);
+    background-image: url(/resources/images/calculadora/4.png);
 }
 
 #kins {
-    background-image: url(https://maya.nmai.si.edu/sites/all/themes/mayatime/img/calendar-converter/long/long4.png);
+    background-image: url(/resources/images/calculadora/5.png);
 }
 
 #details>div {
@@ -745,7 +773,9 @@ div#monument div.calendar-glyph div.numeral {
     font-size: 18px;
 }
 
-#select-date input, #select-date select, #select-date option {
+#select-date input,
+#select-date select,
+#select-date option {
     color: #381A05;
     font-weight: bold;
 }
@@ -758,7 +788,8 @@ div#monument div.calendar-glyph div.numeral {
     color: #381A05;
 }
 
-.block-block-5, .block-block-7 {
+.block-block-5,
+.block-block-7 {
     border: 3px solid #552911;
     padding: 20px;
     -moz-box-shadow: inset 0 0 2px 2px #7e6c62;
@@ -778,7 +809,8 @@ div#monument div.calendar-glyph div.numeral {
     margin: 0 auto !important;
 }
 
-#calendar-abstract, #calendar-abstract table {
+#calendar-abstract,
+#calendar-abstract table {
     margin-bottom: 10px;
 }
 
@@ -847,7 +879,6 @@ p.number-9 {
 
 button {
     padding: 4px 2px;
-    border: 2px solid #552911 !important;
     color: #552911;
     background: #f3c885;
     border-radius: 8px !important;
@@ -855,34 +886,39 @@ button {
     -webkit-border-radius: 8px !important;
     behavior: url(/sites/all/themes/mayatime/css/PIE.htc);
     font-family: "Roboto", sans-serif;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
 }
 
 button#convert {
     font-family: "Roboto", sans-serif;
-    text-transform: uppercase;    
-    background-color: #333d29; /* Green */
-    border: none;
+    text-transform: uppercase;
+    background-color: #00000000;
+    /* Green */
     color: white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 3px 1px;
+    margin: 15px 1px;
     transition-duration: 0.4s;
-    cursor: pointer; 
-    border-radius: 12px;   
+    cursor: pointer;
+    border-radius: 12px;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
 }
 
 button#convert:hover {
-    background: #4f772d;    
+    background: #14c98f;
 }
 
 button span {
     font-weight: bold;
 }
 
-input, select {
+input,
+select {
     background-color: #f4e5d2;
     border: 2px solid #552911 !important;
 }
@@ -893,16 +929,22 @@ input, select {
     -webkit-box-shadow: none !important;
 }
 
-.letterC{
-    font-family: "Roboto", sans-serif;     
+.letterC {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
 }
 
-.letterC2{
-    font-family: "Roboto", sans-serif;     
+.letterC1 {
+    font-family: "Roboto", sans-serif;
+    color: #14c98f;
+}
+
+.letterC2 {
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
 
-.letterC3{
-    font-family: "Roboto", sans-serif;     
+.letterC3 {
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
 }

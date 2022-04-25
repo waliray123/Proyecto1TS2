@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+nav ul>li:nth-of-type(6) {
+    background-color: #2a2c38;
+    border-bottom: 2px solid #14c98f;
+}
+
 * {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -169,9 +174,9 @@ h2 {
 
 .question-image-final {
     width: 500px;
-    height: 325px;
+    height: 300px;
     padding: 10px;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
 }
 
 .options-container {

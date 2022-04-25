@@ -1294,4 +1294,80 @@ VALUES ( 'El calendario solar maya es llamado Haab ¿Que significa la palabra \"
 'Calendario del sol'
 );
 
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( 'El calendario lunar maya es llamado Tzolkin  ¿Que significa la palabra \"Tzolkin”\"?',
+'/resources/images/trivia/questions/tzolkin.jpg',
+0,
+'Tzolkin significa la cuenta de los dias',
+'La cuenta de los dias',
+'Los dias contados',
+'Dias lunares',
+'Calendario de la luna'
+);
+
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( '¿Que sistema numerico utiliza la matematica maya?',
+'/resources/images/trivia/questions/math.jpg',
+0,
+'La matematica maya usa la base 20 (vigesimal)',
+'Vigesimal(20)',
+'Decimal(10)',
+'Octal(8)',
+'Binario(2)'
+);
+
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( '¿Que simbolo representa el 0 en la matematica maya?',
+'/resources/images/trivia/questions/cero.jpg',
+2,
+'La semilla o concha simboliza el 0',
+'El punto',
+'La raya',
+'La semilla',
+'El cero'
+);
+
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( '¿Cual es el calendario maya mas similiar al de la actualidad?',
+'/resources/images/trivia/questions/haab2.jpg',
+1,
+'El Haab, es el más similar al calendario que utilizamos en la actualidad con 365 días en su recuento',
+'Ninguno',
+'Haab',
+'Tzolkin',
+'Nihiliano'
+);
+
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( '¿Cual es la diferencia entre el calendario Tzolkin y Cholquij?',
+'/resources/images/trivia/questions/cholquij.jpg',
+3,
+'El Cholq’ij también recibe el nombre de calendario sagrado o Tzolkin',
+'Su uso',
+'Los dias',
+'Los meses',
+'Ninguna'
+);
+
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( '¿Que se observo para crear el calendario maya?',
+'/resources/images/trivia/questions/haab3.jpg',
+3,
+'El calendario maya se creó a partir de la observación de fenómenos astronómicos.',
+'Tiempo en caer la noche',
+'El pasar de las horas',
+'Fenomenos naturales',
+'Fenomenos astronomicos'
+);
+
+INSERT INTO Pregunta (question ,rutaImagen,numRespuesta,comentario,opcion1,opcion2,opcion3,opcion4)
+VALUES ( '¿En qué época se desarrolló la civilización maya?',
+'/resources/images/trivia/questions/civimaya.jpg',
+1,
+'Los primeros registros de la civilización maya datan del 1800 antes de Cristo.',
+'1800 d.c',
+'1800 a.c',
+'1700 d.c',
+'1900 a.c'
+);
 
