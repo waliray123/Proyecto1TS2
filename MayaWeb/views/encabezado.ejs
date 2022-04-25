@@ -5,13 +5,18 @@
         <li><a href="/calendarioHaab">Calendario Haab</a></li>
         <li><a href="#">Calendario Cholqij</a></li>
         <li><a href="/ruedaCalendarica">Rueda Calendarica</a></li>
-        <li><a href="/matematica-maya">Matematica Maya</a></li>   
-        <li><a href="#">Calculadora</a></li>
+        <li><a href="/matematica-maya">Matematica Maya</a></li>        
+        <li><a href="/trivia">Trivia</a></li>
+        <li><a href="#">Puntuaciones</a></li>
+        <%if(name){%>
+        <li><a><%-name%></a></li>        
+        <%}%>
         <li>
             <a href="#">
                 <i class="fa fa-bars"></i>
             </a>
         </li>
+        
         <input type="search" />
     </ul>
 </nav>

@@ -1,0 +1,217 @@
+body {
+    color: #413D3D;
+    background-color: #202328;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.options-container li {
+    list-style: none;
+    margin-bottom: 1%;
+}
+
+button {
+    width: 300px;
+    font-size: 20px;
+    margin: 12px 0;
+    padding: 5px 0;
+    background-color: #00000000;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
+}
+
+button:active {
+    background-color: #95a5a6;
+}
+
+.correctStyle {
+    background-color: #2ecc71;
+    border: 8px solid #2ecc71;
+}
+
+.incorrectStyle {
+    background-color: #e74c3c;
+    border: 8px solid #e74c3c;
+}
+
+.title-container {
+    width: 90%;
+    height: 12%;
+    padding-top: 3%;
+    margin-left: 6%;
+    background-color: #2a2c38;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    color: white;
+}
+
+.user-container {
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 4%;
+    background-color: #2a2c38;
+    height: 15%;
+    display: inline;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.labels-container {
+    width: 100%;
+    clear: none;
+    background-color: #2a2c38;
+    margin-top: 4%;
+}
+
+.avatar {
+    width: 52px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    border: 3px solid #14c98f;
+}
+
+.username-container {
+    color: #14c98f;
+    margin-top: 4%;
+    margin-left: 27%;
+    width: 70%;
+    text-align: left;
+}
+
+.points-container {
+    color: white;
+    margin-bottom: 3%;
+    margin-left: 27%;
+    width: 85%;
+    text-align: left;
+    font-size: 28px;
+}
+
+.timer-container {
+    width: 90%;
+    height: 65%;
+    margin-left: 6%;
+    margin-top: 36%;
+    padding-top: 3%;
+    background-color: #2a2c38;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.timer-container p {
+    color: white;
+    margin-top: 3%;
+    font-size: 17px;
+}
+
+.timer-title {
+    color: #fff;
+    font-size: 27px;
+}
+
+.icon {
+    width: 200px;
+    height: 230px;
+}
+
+.questions-container {
+    width: 90%;
+    height: 18%;
+    margin-left: 5%;
+    padding-top: 1%;
+    vertical-align: middle;
+}
+
+h2 {
+    color: white;
+    font-size: 28px;
+    height: 75%;
+    border-bottom: 10px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
+}
+
+.image-container {
+    width: 90%;
+    height: 45%;
+    margin-left: 5%;
+}
+
+.image-container p {
+    color: white;
+    font-size: 20px;
+}
+
+.question-image {
+    border-radius: 5px;
+    width: 220px;
+    height: 210px;
+    margin-top: 4%;
+    padding: 10px;
+    border: 25px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 30 round;
+}
+
+.question-image-final {
+    width: 500px;
+    height: 325px;
+    padding: 10px;
+    margin-bottom: 1%;
+}
+
+.options-container {
+    width: 90%;
+    height: 30%;
+    padding-top: 2%;
+    margin-left: 5%;
+}
+
+.options-container ul {
+    list-style-type: none;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.split-left {
+    height: 90%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    left: 0%;
+    background-color: #202328;
+}
+
+.split-right {
+    height: 85%;
+    width: 72%;
+    position: fixed;
+    z-index: 1;
+    top: 13%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    right: 2%;
+    background-color: #2a2c38;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
