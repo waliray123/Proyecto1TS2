@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maya Web Trivia</title>
+
+
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="resources/stylesheets/estiloTop.css">
+</head>
+
+<body ontouchstart="">
+    <%-include('encabezado')%>
+        <div class="container">
+            <div class="item">
+                <h2>Puntuaciones Trivia</h2>
+                <div id="metric_results"></div>
+            </div>
+            <div class="item">
+                <h2>Puntuaciones Matematica Maya</h2>
+                <div id="metric_results2"></div>
+            </div>
+        </div>
+
+        <script type='text/javascript'>
+            var datosIns =<%-JSON.stringify(informacion) %>;
+            var datosIns2 =<%-JSON.stringify(informacion2) %>;            
+            crearTabla('metric_results',datosIns);
+            crearTabla('metric_results2',datosIns2);
+            function crearTabla(nombreDiv, datos) {
+                var myTableDiv = document.getElementById(nombreDiv)
+                var table = document.createElement('TABLE')
+                var tableBody = document.createElement('TBODY')
+
+                table.border = '1'
+                table.appendChild(tableBody);
+
+                var heading = new Array();
+                heading[0] = "Puesto"
+                heading[1] = "Nombre"
+                heading[2] = "Puntuacion"
+
+                var stock = new Array()
+                //Crear filas
+                for (let i = 0; i < datos.length; i++) {
+                    const element = datos[i];
+                    stock[i] = new Array(i, element.Usuario_nombre_usuario, element.puntuacion);
+                }
+
+                //COLUMNAS DE LA TABLA
+                var tr = document.createElement('TR');
+                tableBody.appendChild(tr);
+                for (i = 0; i < heading.length; i++) {
+                    var th = document.createElement('TH')
+                    th.width = '75';
+                    th.appendChild(document.createTextNode(heading[i]));
+                    tr.appendChild(th);
+                }
+
+                //FILAS DE LA TABLA
+                for (i = 0; i < stock.length; i++) {
+                    var tr = document.createElement('TR');
+                    for (j = 0; j < stock[i].length; j++) {
+                        var td = document.createElement('TD')
+                        td.appendChild(document.createTextNode(stock[i][j]));
+                        tr.appendChild(td)
+                    }
+                    tableBody.appendChild(tr);
+                }
+                myTableDiv.appendChild(table)
+            }
+
+
+        </script>
+</body>
+
+</html>

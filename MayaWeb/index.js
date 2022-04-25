@@ -84,6 +84,26 @@ app.get('/calculadora', (req, res) => {
     });
 });
 
+app.get('/puntuaciones', (req, res) => {
+    let queryCons1 = 'SELECT * FROM mayaweb.Usuario_Juego WHERE Juego_nombre_juego = \'trivia\' ORDER BY puntuacion DESC LIMIT 10;';
+    let queryCons2 = 'SELECT * FROM mayaweb.Usuario_Juego WHERE Juego_nombre_juego = \'matematica maya\' ORDER BY puntuacion DESC LIMIT 10;';
+    connection.query(queryCons1, function(err, result) {
+        if (err) {
+            throw err;
+        } else {
+            obj = JSON.stringify(result);
+			connection.query(queryCons2, function(err2, result2) {
+				if (err2) {
+					throw err2;
+				} else {
+					obj = JSON.stringify(result);
+					res.render('top', { 'informacion': result,'informacion2': result2,'name': req.session.name });
+				}
+			});
+        }
+    });
+});
+
 app.post('/register', async(req, res) => {
     const user = req.body.user;
     const name = req.body.name;
