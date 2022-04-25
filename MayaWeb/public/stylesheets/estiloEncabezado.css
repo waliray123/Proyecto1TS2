@@ -33,19 +33,21 @@ nav ul {
     background-color: #2a2c38;
 }
 
+nav ul>li:hover {
+    background-color: #14c98f;
+}
+
+nav img {
+    width: 25px;
+    height: 20px;
+    margin-top: 2%;
+}
+
 nav ul>li {
     padding: 15px;
     display: inline-block;
     transition: all .3s ease;
     margin-left: -5px
-}
-
-nav ul>li:not(:last-of-type):hover {
-    background-color: #14c98f;
-}
-
-nav ul>li:first-of-type {
-    border-bottom: 2px solid #14c98f;
 }
 
 nav ul>li:last-of-type {

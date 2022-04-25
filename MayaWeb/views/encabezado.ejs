@@ -1,22 +1,33 @@
 <link href="/resources/stylesheets/estiloEncabezado.css" rel="stylesheet" type="text/css">
 <nav>
     <ul>
+        <img src="/resources/images/trivia/home.png" />
         <li><a href="/">MAYAWEB </a></li>
+        <img src="/resources/images/trivia/sol.png" />
         <li><a href="/calendarioHaab">Calendario Haab</a></li>
+        <img src="/resources/images/trivia/luna.png" />
         <li><a href="#">Calendario Cholqij</a></li>
+        <img src="/resources/images/trivia/rueda.png" />
         <li><a href="/ruedaCalendarica">Rueda Calendarica</a></li>
-        <li><a href="/matematica-maya">Matematica Maya</a></li>        
+        <img src="/resources/images/trivia/math.png" />
+        <li><a href="/matematica-maya">Matematica Maya</a></li>
+        <img src="/resources/images/trivia/trivianav.png" />
         <li><a href="/trivia">Trivia</a></li>
+        <img src="/resources/images/trivia/user.png" />
         <li><a href="#">Puntuaciones</a></li>
         <%if(name){%>
-        <li><a><%-name%></a></li>        
-        <%}%>
-        <li>
-            <a href="#">
-                <i class="fa fa-bars"></i>
-            </a>
-        </li>
-        
-        <input type="search" />
+            <li>
+                <a>
+                    <%-name%>
+                </a>
+            </li>
+            <%}%>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+
+                <input type="search" />
     </ul>
 </nav>

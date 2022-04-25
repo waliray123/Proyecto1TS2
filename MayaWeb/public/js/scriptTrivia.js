@@ -61,7 +61,7 @@ var allQuestions = [{
 //Mensajes finales
 var result = [{
     image: "/resources/images/trivia/final0.png",
-    comment: "¡Felicidades! ¡Acertaste todas!"
+    comment: "¡Felicidades! ¡Acertaste muy bien!"
 }, {
     image: "/resources/images/trivia/final1.png",
     comment: " ¡Muy bien! ¡Vas mejorando!"
@@ -114,33 +114,26 @@ async function end() {
     $("#image").html('<img src=' + result[optionFinal].image + ' class="question-image-final "alt="">').fadeIn(1000);
     $("#try-again-container").show();
     let contPts = totalPoints;
-    const data = {contPts};
-        const options = {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {'Content-Type': 'application/json'}            
-        }
-        const response = await fetch('/trivia-maya-up-points',options)
-        const json_res = await response.json();
-        console.log(json_res);
+    const data = { contPts };
+    const options = {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json' }
+    }
+    const response = await fetch('/trivia-maya-up-points', options)
+    const json_res = await response.json();
+    console.log(json_res);
     restart();
 };
 
 // Calcula la puntuacion e imagen final
 function finalImage() {
-    if (totalCorrect < allQuestions.length && totalCorrect >= (allQuestions.length * .7)) {
-        optionFinal = 1;
-    } else if (totalCorrect <= (allQuestions.length * .6) && totalCorrect >= (allQuestions.length * .2)) {
-        optionFinal = 2;
-    } else if (totalCorrect !== allQuestions.length) {
-        optionFinal = 3;
-    }
 
-    if (((totalCorrect / 5) * 100) > 75) {
+    if (((totalCorrect / allQuestions.length) * 100) > 75) {
         optionFinal = 0;
-    } else if ((((totalCorrect / 5) * 100) < 75) && (((totalCorrect / 5) * 100) > 50)) {
+    } else if ((((totalCorrect / allQuestions.length) * 100) < 75) && (((totalCorrect / allQuestions.length) * 100) > 50)) {
         optionFinal = 1;
-    } else if ((((totalCorrect / 5) * 100) < 50) && (((totalCorrect / 5) * 100) > 25)) {
+    } else if ((((totalCorrect / allQuestions.length) * 100) < 50) && (((totalCorrect / allQuestions.length) * 100) > 25)) {
         optionFinal = 2;
     } else {
         optionFinal = 3;
