@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maya Web Trivia</title>
+
+    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="resources/stylesheets/estiloTrivia.css">
+</head>
+
+<body ontouchstart="">
+
+    <%-include('encabezado')%>
+        <!-- Elements on the left -->
+        <div class="split-left">
+            <!-- Navbar -->
+
+            <!-- Title -->
+            <div class="title-container">
+                <h1>Trivia Maya</h1>
+            </div>
+            <!-- User stats -->
+            <div class="user-container">
+                <img class="avatar" src="resources/images/trivia/user.jpg" />
+                <div class="labels-container">
+                    <div class="username-container">
+                        JeffMenca
+                    </div>
+                    <div id="points" class="points-container">
+                        0 pts
+                    </div>
+                </div>
+            </div>
+            <!-- Timer and pet -->
+            <div class="timer-container">
+                <h4 id="ix-title" class="timer-title">¡Hola soy Ix!</h4>
+                <img id="ix" class="icon" src="resources/images/trivia/hello.gif" />
+                <p id="texto-ix">Yo te guiare en este proceso de aprendizaje, te mostrare el tiempo y tus aciertos</p>
+            </div>
+        </div>
+
+        <!-- Elements on the right -->
+        <div class="split-right">
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <h2>¡Bienvenido a la trivia!</h2>
+            </div>
+
+            <!-- Question image -->
+            <div class="image-container">
+                <p id="image" class="image"></p>
+                <p id="text1">Aqui podras poner a prueba tus conocimientos acerca de la matemática maya, el calendario Cholq'ij (lunar) y calendario Haab (solar).
+                </p><br><br>
+                <p id="text2">¡Si estas listo presiona empezar!</p>
+                <button id="start-button" class="submit-answer" onclick="ready()">Empezar</button>
+            </div>
+            <!-- Question options -->
+            <div class="options-container">
+                <div id="try-again-container" style="display:none;"><button id="try-again">Intentar de nuevo</button></div>
+                <ul id="asnwers-container">
+                    <li><button class="submit-answer" id="0" onclick="buttonPress(0)"></button></li>
+                    <li><button class="submit-answer" id="1" onclick="buttonPress(1)"></button></li>
+                    <li><button class="submit-answer" id="2" onclick="buttonPress(2)"></button></li>
+                    <li><button class="submit-answer" id="3" onclick="buttonPress(3)"></button></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="resources/js/scriptTrivia.js"></script>
+</body>
+
+</html>
