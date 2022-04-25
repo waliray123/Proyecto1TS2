@@ -14,18 +14,49 @@ body {
     user-select: none;
 }
 
-.container {    
-    display: flex;
+.container {
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    text-align: center;
+    
 }
 
-.item {    
-    width: max-content;
+.item {
+    width: 40%;
     padding: 2em;
     margin: 1em;
     background-color: #2a2c38;
+    color: white;
+    border: 8px solid transparent;
+    border-image: url(/resources/images/trivia/border.png) 20 round;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+table td, table th {
+    border: 1px solid #14c98f;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #04AA6D;
+}
+
+table tr:hover {
+    background-color: #14c98f;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #14c98f;
     color: white;
 }
